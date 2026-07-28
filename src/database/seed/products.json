@@ -1,0 +1,182 @@
+[
+  {
+    "brand_id": 1,
+    "category_id": 2,
+    "name": "에센셜 옥스포드 셔츠",
+    "price": 69000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "탄탄한 코튼 원단으로 제작한 클래식 셔츠입니다.",
+      "fit": "레귤러핏",
+      "material": "면 100%",
+      "color": ["화이트", "스카이블루", "블랙"],
+      "size": ["S", "M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-03-12 10:14:22"
+  },
+  {
+    "brand_id": 1,
+    "category_id": 1,
+    "name": "헤비 코튼 티셔츠",
+    "price": 39000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "밀도 높은 코튼 원단으로 제작한 데일리 반팔 티셔츠입니다.",
+      "fit": "세미오버핏",
+      "material": "면 100%",
+      "color": ["화이트", "블랙", "그레이"],
+      "size": ["S", "M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-02-18 09:02:31"
+  },
+  {
+    "brand_id": 1,
+    "category_id": 8,
+    "name": "미니멀 와이드 슬랙스",
+    "price": 89000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "여유로운 실루엣과 깔끔한 라인이 돋보이는 슬랙스입니다.",
+      "fit": "와이드핏",
+      "material": "폴리에스터 68%, 레이온 28%, 스판 4%",
+      "color": ["차콜", "블랙"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-04-05 15:42:08"
+  },
+  {
+    "brand_id": 1,
+    "category_id": 11,
+    "name": "코튼 블루종 자켓",
+    "price": 149000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "가볍게 걸치기 좋은 미니멀 스타일의 블루종 자켓입니다.",
+      "fit": "레귤러핏",
+      "material": "면 65%, 나일론 35%",
+      "color": ["베이지", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-01-22 11:33:47"
+  },
+  {
+    "brand_id": 1,
+    "category_id": 5,
+    "name": "메리노 울 니트",
+    "price": 99000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "부드러운 메리노 울 소재를 사용한 니트웨어입니다.",
+      "fit": "레귤러핏",
+      "material": "메리노울 100%",
+      "color": ["아이보리", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-05-18 17:21:09"
+  },
+  {
+    "brand_id": 2,
+    "category_id": 4,
+    "name": "그래픽 오버핏 후디",
+    "price": 79000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "전면 그래픽이 돋보이는 스트릿 감성의 후디입니다.",
+      "fit": "오버핏",
+      "material": "면 80%, 폴리에스터 20%",
+      "color": ["블랙", "멜란지"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-06-03 13:17:52"
+  },
+  {
+    "brand_id": 2,
+    "category_id": 9,
+    "name": "카고 조거 팬츠",
+    "price": 89000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "활동성과 디자인을 모두 고려한 카고 팬츠입니다.",
+      "fit": "조거핏",
+      "material": "면 97%, 스판 3%",
+      "color": ["카키", "블랙"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-04-29 08:43:14"
+  },
+  {
+    "brand_id": 2,
+    "category_id": 7,
+    "name": "워시드 데님 자켓",
+    "price": 129000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "빈티지 워싱이 매력적인 데님 자켓입니다.",
+      "fit": "세미오버핏",
+      "material": "면 100%",
+      "color": ["인디고"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-03-30 19:11:26"
+  },
+  {
+    "brand_id": 2,
+    "category_id": 1,
+    "name": "피그먼트 반팔 티셔츠",
+    "price": 45000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "피그먼트 워싱으로 자연스러운 컬러감을 더한 반팔 티셔츠입니다.",
+      "fit": "루즈핏",
+      "material": "면 100%",
+      "color": ["차콜", "올리브"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-02-11 16:22:18"
+  },
+  {
+    "brand_id": 2,
+    "category_id": 19,
+    "name": "로고 볼캡",
+    "price": 39000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "심플한 로고 자수가 포인트인 데일리 볼캡입니다.",
+      "fit": "FREE",
+      "material": "면 100%",
+      "color": ["블랙", "네이비", "베이지"],
+      "size": ["FREE"],
+      "origin": "대한민국"
+    },
+    "status": "ON_SALE",
+    "like_count": 0,
+    "created_at": "2026-07-01 12:55:41"
+  }
+]

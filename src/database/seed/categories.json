@@ -1,0 +1,165 @@
+[
+  {
+    "parent_id": null,
+    "name": "상의",
+    "depth": 1,
+    "sort_order": 1
+  },
+  {
+    "parent_id": null,
+    "name": "하의",
+    "depth": 1,
+    "sort_order": 2
+  },
+  {
+    "parent_id": null,
+    "name": "아우터",
+    "depth": 1,
+    "sort_order": 3
+  },
+  {
+    "parent_id": null,
+    "name": "원피스",
+    "depth": 1,
+    "sort_order": 4
+  },
+  {
+    "parent_id": null,
+    "name": "신발",
+    "depth": 1,
+    "sort_order": 5
+  },
+  {
+    "parent_id": null,
+    "name": "가방",
+    "depth": 1,
+    "sort_order": 6
+  },
+  {
+    "parent_id": null,
+    "name": "패션소품",
+    "depth": 1,
+    "sort_order": 7
+  },
+
+  {
+    "parent_id": 1,
+    "name": "반팔",
+    "depth": 2,
+    "sort_order": 1
+  },
+  {
+    "parent_id": 1,
+    "name": "셔츠",
+    "depth": 2,
+    "sort_order": 2
+  },
+  {
+    "parent_id": 1,
+    "name": "맨투맨",
+    "depth": 2,
+    "sort_order": 3
+  },
+  {
+    "parent_id": 1,
+    "name": "후드",
+    "depth": 2,
+    "sort_order": 4
+  },
+  {
+    "parent_id": 1,
+    "name": "니트",
+    "depth": 2,
+    "sort_order": 5
+  },
+  {
+    "parent_id": 1,
+    "name": "가디건",
+    "depth": 2,
+    "sort_order": 6
+  },
+
+  {
+    "parent_id": 2,
+    "name": "데님",
+    "depth": 2,
+    "sort_order": 1
+  },
+  {
+    "parent_id": 2,
+    "name": "슬랙스",
+    "depth": 2,
+    "sort_order": 2
+  },
+  {
+    "parent_id": 2,
+    "name": "팬츠",
+    "depth": 2,
+    "sort_order": 3
+  },
+  {
+    "parent_id": 2,
+    "name": "반바지",
+    "depth": 2,
+    "sort_order": 4
+  },
+
+  {
+    "parent_id": 3,
+    "name": "자켓",
+    "depth": 2,
+    "sort_order": 1
+  },
+  {
+    "parent_id": 3,
+    "name": "코트",
+    "depth": 2,
+    "sort_order": 2
+  },
+  {
+    "parent_id": 3,
+    "name": "패딩",
+    "depth": 2,
+    "sort_order": 3
+  },
+
+  {
+    "parent_id": 4,
+    "name": "원피스",
+    "depth": 2,
+    "sort_order": 1
+  },
+
+  {
+    "parent_id": 5,
+    "name": "운동화",
+    "depth": 2,
+    "sort_order": 1
+  },
+  {
+    "parent_id": 5,
+    "name": "부츠",
+    "depth": 2,
+    "sort_order": 2
+  },
+
+  {
+    "parent_id": 6,
+    "name": "가방",
+    "depth": 2,
+    "sort_order": 1
+  },
+
+  {
+    "parent_id": 7,
+    "name": "모자",
+    "depth": 2,
+    "sort_order": 1
+  },
+  {
+    "parent_id": 7,
+    "name": "액세서리",
+    "depth": 2,
+    "sort_order": 2
+  }
+]
