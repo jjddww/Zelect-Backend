@@ -1,4 +1,5 @@
 DROP DATABASE IF EXISTS zelect;
+
 CREATE DATABASE zelect
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
@@ -17,14 +18,18 @@ CREATE TABLE users (
 
     nickname VARCHAR(50) NOT NULL,
 
-    phone VARCHAR(20) NULL,
+    phone VARCHAR(20),
 
-    grade ENUM('GENERAL', 'VIP', 'VVIP')
-        NOT NULL DEFAULT 'GENERAL',
+    grade ENUM(
+        'GENERAL',
+        'VIP',
+        'VVIP'
+    ) NOT NULL DEFAULT 'GENERAL',
 
     mileage INT NOT NULL DEFAULT 0,
 
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
     updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
         ON UPDATE CURRENT_TIMESTAMP
 );
@@ -36,7 +41,7 @@ CREATE TABLE users (
 CREATE TABLE brands (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 
-    name VARCHAR(100) NOT NULL,
+    name VARCHAR(100) NOT NULL UNIQUE,
 
     logo_url VARCHAR(500),
 
@@ -64,7 +69,9 @@ CREATE TABLE categories (
         FOREIGN KEY (parent_id)
         REFERENCES categories(id)
         ON DELETE SET NULL
-        ON UPDATE CASCADE
+        ON UPDATE CASCADE,
+
+    UNIQUE (parent_id, name)
 );
 
 -- ===========================
@@ -82,15 +89,17 @@ CREATE TABLE products (
 
     price INT NOT NULL,
 
-    discount_rate TINYINT NOT NULL DEFAULT 0,
+    discount_rate TINYINT UNSIGNED NOT NULL DEFAULT 0,
+
+    thumbnail_url VARCHAR(500) NULL,
 
     description JSON NULL,
 
     status ENUM(
-        'ON_SALE',
+        'ACTIVE',
         'SOLD_OUT',
         'HIDDEN'
-    ) NOT NULL DEFAULT 'ON_SALE',
+    ) NOT NULL DEFAULT 'ACTIVE',
 
     like_count INT NOT NULL DEFAULT 0,
 
@@ -118,7 +127,7 @@ CREATE TABLE exhibitions (
 
     title VARCHAR(200) NOT NULL,
 
-    banner_image_url VARCHAR(500) NULL,
+    banner_image_url VARCHAR(500),
 
     start_at DATETIME NOT NULL,
 
@@ -133,6 +142,15 @@ CREATE TABLE exhibitions (
 -- Indexes
 -- ===========================
 
+CREATE INDEX idx_users_email
+ON users(email);
+
+CREATE INDEX idx_brands_name
+ON brands(name);
+
+CREATE INDEX idx_categories_parent
+ON categories(parent_id);
+
 CREATE INDEX idx_products_brand
 ON products(brand_id);
 
@@ -142,14 +160,8 @@ ON products(category_id);
 CREATE INDEX idx_products_status
 ON products(status);
 
-CREATE INDEX idx_categories_parent
-ON categories(parent_id);
-
-CREATE INDEX idx_users_email
-ON users(email);
-
-CREATE INDEX idx_brands_name
-ON brands(name);
+CREATE INDEX idx_products_name
+ON products(name);
 
 CREATE INDEX idx_exhibitions_period
 ON exhibitions(start_at, end_at);
