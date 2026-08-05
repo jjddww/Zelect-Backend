@@ -23,12 +23,12 @@ export const getNew = async () => {
       name: newProduct.name,
       thumbnail: newProduct.thumbnail_url,
       price: newProduct.price,
-      discountRate: newProduct.discount_rate
+      discountRate: newProduct.discount_rate,
     })),
   };
 };
 
-export const getRecommendations = async() => {
+export const getRecommendations = async () => {
   const recommendedProducts = await homeRepository.findRecommendations();
 
   return {
@@ -37,7 +37,7 @@ export const getRecommendations = async() => {
       name: recommendationProduct.name,
       thumbnail: recommendationProduct.thumbnail_url,
       price: recommendationProduct.price,
-      discountRate: recommendationProduct.discount_rate
-    }))
+      discountRate: recommendationProduct.discount_rate,
+    })),
   };
-}
+};

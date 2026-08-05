@@ -22,7 +22,6 @@ export const getNew = async (req: Request, res: Response, next: NextFunction) =>
       success: true,
       data: result,
     });
-
   } catch (error) {
     next(error);
   }
@@ -34,7 +33,7 @@ export const getRecommendations = async (req: Request, res: Response, next: Next
 
     res.status(200).json({
       success: true,
-      data: result
+      data: result,
     });
   } catch (error) {
     next(error);

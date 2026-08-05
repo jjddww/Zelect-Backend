@@ -10,4 +10,3 @@ app.use('/api/home', homeRouter);
 app.use('/api/category', categoryRouter);
 
 export default app;
- 

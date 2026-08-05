@@ -19,7 +19,6 @@ export const findExhibitions = async () => {
   return rows as any[];
 };
 
-
 export const findNewProducts = async () => {
   const [rows] = await pool.query(
     `
@@ -33,7 +32,7 @@ export const findNewProducts = async () => {
       ORDER BY created_at DESC
       LIMIT 5;
 
-    `
+    `,
   );
   return rows as any[];
 };
@@ -51,8 +50,8 @@ export const findRecommendations = async () => {
       WHERE status = 'ACTIVE'
       ORDER BY RAND()
       LIMIT 5;
-    `
-  )
+    `,
+  );
 
   return rows as any[];
 };
