@@ -36,9 +36,10 @@ type Product = {
   price: number;
   discount_rate: number;
   description: object;
-  status: 'ON_SALE' | 'SOLD_OUT' | 'HIDDEN';
+  status: 'ACTIVE' | 'SOLD_OUT' | 'HIDDEN';
   like_count: number;
   created_at: string;
+  thumbnail_url: string | null;
 };
 
 type Exhibition = {
@@ -124,6 +125,7 @@ async function seedProducts() {
     product.name,
     product.price,
     product.discount_rate,
+    product.thumbnail_url,
     JSON.stringify(product.description),
     product.status,
     product.like_count,
@@ -139,6 +141,7 @@ async function seedProducts() {
       name,
       price,
       discount_rate,
+      thumbnail_url,
       description,
       status,
       like_count,
