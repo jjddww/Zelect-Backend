@@ -1,7 +1,7 @@
 [
   {
     "brand_id": 1,
-    "category_id": 2,
+    "category_id": 13,
     "name": "에센셜 옥스포드 셔츠",
     "price": 69000,
     "discount_rate": 20,
@@ -20,7 +20,7 @@
   },
   {
     "brand_id": 1,
-    "category_id": 1,
+    "category_id": 13,
     "name": "헤비 코튼 티셔츠",
     "price": 39000,
     "discount_rate": 10,
@@ -35,11 +35,11 @@
     "status": "ACTIVE",
     "like_count": 0,
     "created_at": "2026-02-18 09:02:31",
-    "thumnail_url": null
+    "thumbnail_url": null
   },
   {
     "brand_id": 1,
-    "category_id": 8,
+    "category_id": 13,
     "name": "미니멀 와이드 슬랙스",
     "price": 89000,
     "discount_rate": 15,
@@ -58,7 +58,7 @@
   },
   {
     "brand_id": 1,
-    "category_id": 11,
+    "category_id": 13,
     "name": "코튼 블루종 자켓",
     "price": 149000,
     "discount_rate": 30,
@@ -77,7 +77,7 @@
   },
   {
     "brand_id": 1,
-    "category_id": 5,
+    "category_id": 13,
     "name": "메리노 울 니트",
     "price": 99000,
     "discount_rate": 0,
@@ -96,7 +96,7 @@
   },
   {
     "brand_id": 2,
-    "category_id": 4,
+    "category_id": 13,
     "name": "그래픽 오버핏 후디",
     "price": 79000,
     "discount_rate": 20,
@@ -115,7 +115,7 @@
   },
   {
     "brand_id": 2,
-    "category_id": 9,
+    "category_id": 13,
     "name": "카고 조거 팬츠",
     "price": 89000,
     "discount_rate": 15,
@@ -134,7 +134,7 @@
   },
   {
     "brand_id": 2,
-    "category_id": 7,
+    "category_id": 13,
     "name": "워시드 데님 자켓",
     "price": 129000,
     "discount_rate": 25,
@@ -153,7 +153,7 @@
   },
   {
     "brand_id": 2,
-    "category_id": 1,
+    "category_id": 13,
     "name": "피그먼트 반팔 티셔츠",
     "price": 45000,
     "discount_rate": 0,
@@ -172,7 +172,7 @@
   },
   {
     "brand_id": 2,
-    "category_id": 19,
+    "category_id": 16,
     "name": "로고 볼캡",
     "price": 39000,
     "discount_rate": 10,

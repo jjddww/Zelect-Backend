@@ -61,17 +61,37 @@ CREATE TABLE categories (
 
     name VARCHAR(50) NOT NULL,
 
-    depth TINYINT NOT NULL,
+    depth TINYINT UNSIGNED NOT NULL,
 
-    sort_order INT NOT NULL,
+    sort_order SMALLINT UNSIGNED NOT NULL,
+
+    -- MySQL의 UNIQUE는 NULL끼리 중복을 허용하므로,
+    -- 최상위 카테고리도 동일한 부모(0)를 갖는 것으로 정규화한다.
+    parent_key BIGINT UNSIGNED
+        GENERATED ALWAYS AS (IFNULL(parent_id, 0)) STORED,
 
     CONSTRAINT fk_categories_parent
         FOREIGN KEY (parent_id)
-        REFERENCES categories(id)
-        ON DELETE SET NULL
-        ON UPDATE CASCADE,
+        REFERENCES categories(id),
 
-    UNIQUE (parent_id, name)
+    CONSTRAINT chk_categories_depth
+        CHECK (depth BETWEEN 1 AND 2),
+
+    CONSTRAINT chk_categories_sort_order
+        CHECK (sort_order > 0),
+
+    CONSTRAINT chk_categories_root_depth
+        CHECK (
+            (parent_id IS NULL AND depth = 1)
+            OR
+            (parent_id IS NOT NULL AND depth = 2)
+        ),
+
+    CONSTRAINT uq_categories_sibling_name
+        UNIQUE (parent_key, name),
+
+    CONSTRAINT uq_categories_sibling_sort_order
+        UNIQUE (parent_key, sort_order)
 );
 
 -- ===========================

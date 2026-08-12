@@ -1,165 +1,182 @@
 [
   {
     "parent_id": null,
-    "name": "상의",
+    "name": "여성",
     "depth": 1,
     "sort_order": 1
   },
   {
     "parent_id": null,
-    "name": "하의",
+    "name": "남성",
     "depth": 1,
     "sort_order": 2
   },
   {
     "parent_id": null,
-    "name": "아우터",
+    "name": "뷰티",
     "depth": 1,
     "sort_order": 3
   },
   {
     "parent_id": null,
-    "name": "원피스",
+    "name": "키즈",
     "depth": 1,
     "sort_order": 4
   },
   {
-    "parent_id": null,
+    "parent_id": 1,
+    "name": "신상품",
+    "depth": 2,
+    "sort_order": 1
+  },
+  {
+    "parent_id": 1,
+    "name": "의류",
+    "depth": 2,
+    "sort_order": 2
+  },
+  {
+    "parent_id": 1,
+    "name": "가방",
+    "depth": 2,
+    "sort_order": 3
+  },
+  {
+    "parent_id": 1,
     "name": "신발",
-    "depth": 1,
-    "sort_order": 5
-  },
-  {
-    "parent_id": null,
-    "name": "가방",
-    "depth": 1,
-    "sort_order": 6
-  },
-  {
-    "parent_id": null,
-    "name": "패션소품",
-    "depth": 1,
-    "sort_order": 7
-  },
-
-  {
-    "parent_id": 1,
-    "name": "반팔",
-    "depth": 2,
-    "sort_order": 1
-  },
-  {
-    "parent_id": 1,
-    "name": "셔츠",
-    "depth": 2,
-    "sort_order": 2
-  },
-  {
-    "parent_id": 1,
-    "name": "맨투맨",
-    "depth": 2,
-    "sort_order": 3
-  },
-  {
-    "parent_id": 1,
-    "name": "후드",
     "depth": 2,
     "sort_order": 4
   },
   {
     "parent_id": 1,
-    "name": "니트",
-    "depth": 2,
-    "sort_order": 5
-  },
-  {
-    "parent_id": 1,
-    "name": "가디건",
-    "depth": 2,
-    "sort_order": 6
-  },
-
-  {
-    "parent_id": 2,
-    "name": "데님",
-    "depth": 2,
-    "sort_order": 1
-  },
-  {
-    "parent_id": 2,
-    "name": "슬랙스",
-    "depth": 2,
-    "sort_order": 2
-  },
-  {
-    "parent_id": 2,
-    "name": "팬츠",
-    "depth": 2,
-    "sort_order": 3
-  },
-  {
-    "parent_id": 2,
-    "name": "반바지",
-    "depth": 2,
-    "sort_order": 4
-  },
-
-  {
-    "parent_id": 3,
-    "name": "자켓",
-    "depth": 2,
-    "sort_order": 1
-  },
-  {
-    "parent_id": 3,
-    "name": "코트",
-    "depth": 2,
-    "sort_order": 2
-  },
-  {
-    "parent_id": 3,
-    "name": "패딩",
-    "depth": 2,
-    "sort_order": 3
-  },
-
-  {
-    "parent_id": 4,
-    "name": "원피스",
-    "depth": 2,
-    "sort_order": 1
-  },
-
-  {
-    "parent_id": 5,
-    "name": "운동화",
-    "depth": 2,
-    "sort_order": 1
-  },
-  {
-    "parent_id": 5,
-    "name": "부츠",
-    "depth": 2,
-    "sort_order": 2
-  },
-
-  {
-    "parent_id": 6,
-    "name": "가방",
-    "depth": 2,
-    "sort_order": 1
-  },
-
-  {
-    "parent_id": 7,
-    "name": "모자",
-    "depth": 2,
-    "sort_order": 1
-  },
-  {
-    "parent_id": 7,
     "name": "액세서리",
     "depth": 2,
+    "sort_order": 5
+  },
+  {
+    "parent_id": 1,
+    "name": "스포츠 · 레저",
+    "depth": 2,
+    "sort_order": 6
+  },
+  {
+    "parent_id": 1,
+    "name": "디자이너 브랜드",
+    "depth": 2,
+    "sort_order": 7
+  },
+  {
+    "parent_id": 2,
+    "name": "신상품",
+    "depth": 2,
+    "sort_order": 1
+  },
+  {
+    "parent_id": 2,
+    "name": "의류",
+    "depth": 2,
     "sort_order": 2
+  },
+  {
+    "parent_id": 2,
+    "name": "가방",
+    "depth": 2,
+    "sort_order": 3
+  },
+  {
+    "parent_id": 2,
+    "name": "신발",
+    "depth": 2,
+    "sort_order": 4
+  },
+  {
+    "parent_id": 2,
+    "name": "액세서리",
+    "depth": 2,
+    "sort_order": 5
+  },
+  {
+    "parent_id": 2,
+    "name": "스포츠 · 레저",
+    "depth": 2,
+    "sort_order": 6
+  },
+  {
+    "parent_id": 2,
+    "name": "디자이너 브랜드",
+    "depth": 2,
+    "sort_order": 7
+  },
+  {
+    "parent_id": 3,
+    "name": "스킨케어",
+    "depth": 2,
+    "sort_order": 1
+  },
+  {
+    "parent_id": 3,
+    "name": "메이크업",
+    "depth": 2,
+    "sort_order": 2
+  },
+  {
+    "parent_id": 3,
+    "name": "헤어케어",
+    "depth": 2,
+    "sort_order": 3
+  },
+  {
+    "parent_id": 3,
+    "name": "바디케어",
+    "depth": 2,
+    "sort_order": 4
+  },
+  {
+    "parent_id": 3,
+    "name": "향수",
+    "depth": 2,
+    "sort_order": 5
+  },
+  {
+    "parent_id": 3,
+    "name": "뷰티기기",
+    "depth": 2,
+    "sort_order": 6
+  },
+  {
+    "parent_id": 4,
+    "name": "베이비",
+    "depth": 2,
+    "sort_order": 1
+  },
+  {
+    "parent_id": 4,
+    "name": "키즈 의류",
+    "depth": 2,
+    "sort_order": 2
+  },
+  {
+    "parent_id": 4,
+    "name": "키즈 신발",
+    "depth": 2,
+    "sort_order": 3
+  },
+  {
+    "parent_id": 4,
+    "name": "키즈 잡화",
+    "depth": 2,
+    "sort_order": 4
+  },
+  {
+    "parent_id": 4,
+    "name": "완구",
+    "depth": 2,
+    "sort_order": 5
+  },
+  {
+    "parent_id": 4,
+    "name": "출산 · 육아",
+    "depth": 2,
+    "sort_order": 6
   }
 ]
