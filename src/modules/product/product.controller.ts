@@ -1,6 +1,35 @@
 import { Request, Response, NextFunction } from 'express';
 import * as productService from './product.service';
 
+export const getProductDetail = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const productId = Number(req.params.productId);
+
+    if (!Number.isInteger(productId) || productId <= 0) {
+      return res.status(400).json({
+        success: false,
+        message: '유효하지 않은 productId 입니다.',
+      });
+    }
+
+    const result = await productService.getProductDetail(productId);
+
+    if (!result) {
+      return res.status(404).json({
+        success: false,
+        message: '상품을 찾을 수 없습니다.',
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      data: result,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 export const getProductByBrand = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const brandId = Number(req.query.brandId);
