@@ -30,3 +30,13 @@ export const getBrandOfWeek = async (): Promise<BrandOfWeekRow | null> => {
 
   return rows[0] ?? null;
 };
+
+export const getBrandList = async () => {
+  const [rows] = await pool.query(
+    `
+    SELECT * FROM brands;
+    `,
+  );
+
+  return rows as any[];
+};
