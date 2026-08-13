@@ -19,3 +19,16 @@ export const getBrandOfWeek = async () => {
     },
   };
 };
+
+export const getBrandList = async () => {
+  const brands = await brandRepository.getBrandList();
+
+  return {
+    brands: brands.map((brand) => ({
+      id: brand.id,
+      name: brand.name,
+      image_url: brand.logo_url,
+      desc: brand.description,
+    })),
+  };
+};
