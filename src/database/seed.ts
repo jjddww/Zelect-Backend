@@ -42,6 +42,28 @@ type Product = {
   thumbnail_url: string | null;
 };
 
+type ProductImage = {
+  product_id: number;
+  image_url: string;
+  sort_order: number;
+};
+
+type ProductOption = {
+  product_id: number;
+  color: string;
+  size: string;
+  stock_quantity: number;
+  additional_price: number;
+  status: 'ACTIVE' | 'SOLD_OUT' | 'HIDDEN';
+};
+
+type ProductDescription = {
+  product_id: number;
+  title: string;
+  content: string;
+  sort_order: number;
+};
+
 type Exhibition = {
   title: string;
   banner_image_url: string | null;
@@ -155,6 +177,70 @@ async function seedProducts() {
   console.log(`${products.length} products inserted.`);
 }
 
+async function seedProductImages() {
+  console.log('Seeding product images...');
+
+  const images = loadJson<ProductImage[]>('product-images.json');
+  const values = images.map((image) => [image.product_id, image.image_url, image.sort_order]);
+
+  await connection.query(
+    `
+    INSERT INTO product_images (product_id, image_url, sort_order)
+    VALUES ?
+    `,
+    [values],
+  );
+
+  console.log(`${images.length} product images inserted.`);
+}
+
+async function seedProductOptions() {
+  console.log('Seeding product options...');
+
+  const options = loadJson<ProductOption[]>('product-options.json');
+  const values = options.map((option) => [
+    option.product_id,
+    option.color,
+    option.size,
+    option.stock_quantity,
+    option.additional_price,
+    option.status,
+  ]);
+
+  await connection.query(
+    `
+    INSERT INTO product_options
+      (product_id, color, size, stock_quantity, additional_price, status)
+    VALUES ?
+    `,
+    [values],
+  );
+
+  console.log(`${options.length} product options inserted.`);
+}
+
+async function seedProductDescriptions() {
+  console.log('Seeding product descriptions...');
+
+  const descriptions = loadJson<ProductDescription[]>('product-descriptions.json');
+  const values = descriptions.map((description) => [
+    description.product_id,
+    description.title,
+    description.content,
+    description.sort_order,
+  ]);
+
+  await connection.query(
+    `
+    INSERT INTO product_descriptions (product_id, title, content, sort_order)
+    VALUES ?
+    `,
+    [values],
+  );
+
+  console.log(`${descriptions.length} product descriptions inserted.`);
+}
+
 async function seedExhibitions() {
   console.log('Seeding exhibitions...');
 
@@ -193,11 +279,17 @@ async function run() {
     // FK 때문에 자식부터 삭제
     await connection.query('SET FOREIGN_KEY_CHECKS = 0');
 
+    await connection.query('DELETE FROM product_descriptions');
+    await connection.query('DELETE FROM product_options');
+    await connection.query('DELETE FROM product_images');
     await connection.query('DELETE FROM products');
     await connection.query('DELETE FROM brands');
     await connection.query('DELETE FROM categories');
 
     // AUTO_INCREMENT 초기화
+    await connection.query('ALTER TABLE product_descriptions AUTO_INCREMENT = 1');
+    await connection.query('ALTER TABLE product_options AUTO_INCREMENT = 1');
+    await connection.query('ALTER TABLE product_images AUTO_INCREMENT = 1');
     await connection.query('ALTER TABLE products AUTO_INCREMENT = 1');
     await connection.query('ALTER TABLE brands AUTO_INCREMENT = 1');
     await connection.query('ALTER TABLE categories AUTO_INCREMENT = 1');
@@ -208,6 +300,9 @@ async function run() {
     await seedCategories();
     await seedBrands();
     await seedProducts();
+    await seedProductImages();
+    await seedProductOptions();
+    await seedProductDescriptions();
     await seedExhibitions();
 
     console.log('Seed Complete');

@@ -1,0 +1,13 @@
+[
+  { "product_id": 1, "image_url": "/assets/placeholders/placeholder-01.png", "sort_order": 1 },
+  { "product_id": 1, "image_url": "/assets/placeholders/placeholder-02.png", "sort_order": 2 },
+  { "product_id": 2, "image_url": "/assets/placeholders/placeholder-02.png", "sort_order": 1 },
+  { "product_id": 3, "image_url": "/assets/placeholders/placeholder-03.png", "sort_order": 1 },
+  { "product_id": 4, "image_url": "/assets/placeholders/placeholder-04.png", "sort_order": 1 },
+  { "product_id": 5, "image_url": "/assets/placeholders/placeholder-05.png", "sort_order": 1 },
+  { "product_id": 6, "image_url": "/assets/placeholders/placeholder-06.png", "sort_order": 1 },
+  { "product_id": 7, "image_url": "/assets/placeholders/placeholder-07.png", "sort_order": 1 },
+  { "product_id": 8, "image_url": "/assets/placeholders/placeholder-08.png", "sort_order": 1 },
+  { "product_id": 9, "image_url": "/assets/placeholders/placeholder-09.png", "sort_order": 1 },
+  { "product_id": 10, "image_url": "/assets/placeholders/placeholder-10.png", "sort_order": 1 }
+]
