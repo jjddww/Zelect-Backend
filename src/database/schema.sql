@@ -13,12 +13,14 @@ USE zelect;
 CREATE TABLE users (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 
+    login_id VARCHAR(30) NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL UNIQUE,
     password_hash VARCHAR(255) NOT NULL,
 
-    nickname VARCHAR(50) NOT NULL,
+    name VARCHAR(50) NOT NULL,
 
-    phone VARCHAR(20),
+    phone VARCHAR(20) NOT NULL,
+    address VARCHAR(500) NOT NULL,
 
     grade ENUM(
         'GENERAL',
@@ -27,6 +29,12 @@ CREATE TABLE users (
     ) NOT NULL DEFAULT 'GENERAL',
 
     mileage INT NOT NULL DEFAULT 0,
+
+    status ENUM(
+        'ACTIVE',
+        'INACTIVE',
+        'SUSPENDED'
+    ) NOT NULL DEFAULT 'ACTIVE',
 
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
@@ -164,6 +172,9 @@ CREATE TABLE exhibitions (
 
 CREATE INDEX idx_users_email
 ON users(email);
+
+CREATE INDEX idx_users_status
+ON users(status);
 
 CREATE INDEX idx_brands_name
 ON brands(name);
