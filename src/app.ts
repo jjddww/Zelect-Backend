@@ -5,6 +5,7 @@ import brandRouter from './modules/brand/brand.route';
 import productRouter from './modules/product/product.route';
 import searchRouter from './modules/search/search.route';
 import userRouter from './modules/user/user.route';
+import likeRouter from './modules/like/like.route';
 import { errorMiddleware } from './common/middleware/error.middleware';
 
 const app = express();
@@ -17,6 +18,7 @@ app.use('/api/brand', brandRouter);
 app.use('/api/products', productRouter);
 app.use('/api/search', searchRouter);
 app.use('/api/users', userRouter);
+app.use('/api/like', likeRouter);
 
 app.use(errorMiddleware);
 
