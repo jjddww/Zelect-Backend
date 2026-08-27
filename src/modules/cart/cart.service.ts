@@ -8,10 +8,18 @@ export const getCartByMemberId = async (userId: number) => {
     const unitPrice = item.price + item.additional_price;
     const discountedUnitPrice =
       Math.floor(item.price * (1 - item.discount_rate / 100)) + item.additional_price;
+
     const available =
       item.product_status === 'ACTIVE' &&
       item.option_status === 'ACTIVE' &&
       item.stock_quantity >= item.quantity;
+
+    const status =
+      item.product_status !== 'ACTIVE' || item.option_status !== 'ACTIVE'
+        ? 'SOLD_OUT'
+        : item.stock_quantity < item.quantity
+          ? 'INSUFFICIENT_STOCK'
+          : 'AVAILABLE';
 
     return {
       id: item.id,
@@ -19,7 +27,8 @@ export const getCartByMemberId = async (userId: number) => {
       unitPrice,
       discountedUnitPrice,
       subtotal: discountedUnitPrice * item.quantity,
-      available,
+      status,
+      available, //주문/선택 버튼 비활성화
       product: {
         id: item.product_id,
         name: item.product_name,
