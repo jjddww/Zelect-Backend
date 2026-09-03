@@ -1,192 +1,3802 @@
 [
   {
     "brand_id": 1,
-    "category_id": 13,
-    "name": "에센셜 옥스포드 셔츠",
-    "price": 69000,
-    "discount_rate": 20,
+    "category_id": 6,
+    "name": "에센셜 셔츠 001",
+    "price": 59000,
+    "discount_rate": 5,
     "description": {
-      "summary": "탄탄한 코튼 원단으로 제작한 클래식 셔츠입니다.",
-      "fit": "레귤러핏",
-      "material": "면 100%",
-      "color": ["화이트", "스카이블루", "블랙"],
-      "size": ["S", "M", "L", "XL"],
-      "origin": "대한민국"
-    },
-    "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-03-12 10:14:22",
-    "thumbnail_url": null
-  },
-  {
-    "brand_id": 1,
-    "category_id": 13,
-    "name": "헤비 코튼 티셔츠",
-    "price": 39000,
-    "discount_rate": 10,
-    "description": {
-      "summary": "밀도 높은 코튼 원단으로 제작한 데일리 반팔 티셔츠입니다.",
-      "fit": "세미오버핏",
-      "material": "면 100%",
-      "color": ["화이트", "블랙", "그레이"],
-      "size": ["S", "M", "L", "XL"],
-      "origin": "대한민국"
-    },
-    "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-02-18 09:02:31",
-    "thumbnail_url": null
-  },
-  {
-    "brand_id": 1,
-    "category_id": 13,
-    "name": "미니멀 와이드 슬랙스",
-    "price": 89000,
-    "discount_rate": 15,
-    "description": {
-      "summary": "여유로운 실루엣과 깔끔한 라인이 돋보이는 슬랙스입니다.",
-      "fit": "와이드핏",
-      "material": "폴리에스터 68%, 레이온 28%, 스판 4%",
-      "color": ["차콜", "블랙"],
+      "summary": "에센셜 셔츠 001은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
       "size": ["S", "M", "L"],
       "origin": "대한민국"
     },
     "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-04-05 15:42:08",
-    "thumbnail_url": null
+    "like_count": 37,
+    "created_at": "2026-01-01 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
   },
   {
-    "brand_id": 1,
-    "category_id": 13,
-    "name": "코튼 블루종 자켓",
-    "price": 149000,
-    "discount_rate": 30,
+    "brand_id": 2,
+    "category_id": 7,
+    "name": "에센셜 숄더백 002",
+    "price": 89000,
+    "discount_rate": 10,
     "description": {
-      "summary": "가볍게 걸치기 좋은 미니멀 스타일의 블루종 자켓입니다.",
-      "fit": "레귤러핏",
-      "material": "면 65%, 나일론 35%",
-      "color": ["베이지", "네이비"],
-      "size": ["M", "L", "XL"],
+      "summary": "에센셜 숄더백 002은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
       "origin": "대한민국"
     },
     "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-01-22 11:33:47",
-    "thumbnail_url": null
+    "like_count": 74,
+    "created_at": "2026-02-02 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
   },
   {
-    "brand_id": 1,
+    "brand_id": 3,
+    "category_id": 8,
+    "name": "에센셜 로퍼 003",
+    "price": 109000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "에센셜 로퍼 003은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "합성가죽",
+      "color": ["블랙", "오프화이트", "브라운"],
+      "size": ["230", "240", "250"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 111,
+    "created_at": "2026-03-03 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 4,
+    "category_id": 9,
+    "name": "에센셜 실버 네크리스 004",
+    "price": 69000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "에센셜 실버 네크리스 004은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["실버", "블랙", "베이지"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 148,
+    "created_at": "2026-04-04 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 5,
+    "category_id": 10,
+    "name": "에센셜 요가 레깅스 005",
+    "price": 109000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "에센셜 요가 레깅스 005은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "기능성 폴리에스터",
+      "color": ["블랙", "네이비", "라벤더"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 185,
+    "created_at": "2026-05-05 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 6,
     "category_id": 13,
-    "name": "메리노 울 니트",
+    "name": "에센셜 옥스포드 셔츠 006",
+    "price": 69000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "에센셜 옥스포드 셔츠 006은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "레귤러핏",
+      "material": "프리미엄 코튼 혼방",
+      "color": ["화이트", "차콜", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 222,
+    "created_at": "2026-06-06 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 7,
+    "category_id": 14,
+    "name": "에센셜 레더 백팩 007",
     "price": 99000,
     "discount_rate": 0,
     "description": {
-      "summary": "부드러운 메리노 울 소재를 사용한 니트웨어입니다.",
-      "fit": "레귤러핏",
-      "material": "메리노울 100%",
-      "color": ["아이보리", "네이비"],
+      "summary": "에센셜 레더 백팩 007은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "나일론 혼방",
+      "color": ["블랙", "카키", "브라운"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 259,
+    "created_at": "2026-07-07 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 8,
+    "category_id": 15,
+    "name": "에센셜 독일군 스니커즈 008",
+    "price": 119000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "에센셜 독일군 스니커즈 008은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "천연가죽 혼방",
+      "color": ["블랙", "화이트", "그레이"],
+      "size": ["260", "270", "280"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 296,
+    "created_at": "2026-08-08 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 9,
+    "category_id": 16,
+    "name": "에센셜 메탈 워치 009",
+    "price": 79000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "에센셜 메탈 워치 009은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["블랙", "실버", "네이비"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 333,
+    "created_at": "2026-09-09 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 10,
+    "category_id": 17,
+    "name": "에센셜 러닝 쇼츠 010",
+    "price": 99000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "에센셜 러닝 쇼츠 010은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "흡습속건 폴리에스터",
+      "color": ["블랙", "그레이", "블루"],
       "size": ["M", "L", "XL"],
       "origin": "대한민국"
     },
     "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-05-18 17:21:09",
-    "thumbnail_url": null
+    "like_count": 370,
+    "created_at": "2026-01-10 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
   },
   {
-    "brand_id": 2,
+    "brand_id": 11,
+    "category_id": 19,
+    "name": "에센셜 세라마이드 크림 011",
+    "price": 24000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "에센셜 세라마이드 크림 011은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "모든 피부용",
+      "material": "피부 저자극 포뮬러",
+      "color": ["기본"],
+      "size": ["50ml", "100ml", "200ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 407,
+    "created_at": "2026-02-11 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 12,
+    "category_id": 20,
+    "name": "에센셜 글로우 쿠션 012",
+    "price": 32000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "에센셜 글로우 쿠션 012은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 메이크업",
+      "material": "고밀착 컬러 포뮬러",
+      "color": ["코랄", "로즈", "누드"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 444,
+    "created_at": "2026-03-12 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 13,
+    "category_id": 21,
+    "name": "에센셜 리페어 트리트먼트 013",
+    "price": 46000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "에센셜 리페어 트리트먼트 013은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "손상 모발용",
+      "material": "식물 유래 헤어 포뮬러",
+      "color": ["기본"],
+      "size": ["100ml", "300ml", "500ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 481,
+    "created_at": "2026-04-13 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 14,
+    "category_id": 22,
+    "name": "에센셜 시어버터 로션 014",
+    "price": 49000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "에센셜 시어버터 로션 014은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 케어",
+      "material": "보습 바디 포뮬러",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["50ml", "300ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 17,
+    "created_at": "2026-05-14 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 15,
+    "category_id": 23,
+    "name": "에센셜 솔리드 퍼퓸 015",
+    "price": 109000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "에센셜 솔리드 퍼퓸 015은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "유니섹스",
+      "material": "프리미엄 향료",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["30ml", "50ml"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 54,
+    "created_at": "2026-06-15 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 16,
+    "category_id": 24,
+    "name": "에센셜 진동 클렌저 016",
+    "price": 119000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "에센셜 진동 클렌저 016은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "홈 뷰티 케어",
+      "material": "ABS 및 실리콘",
+      "color": ["화이트", "핑크", "블랙"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 91,
+    "created_at": "2026-07-16 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 17,
+    "category_id": 25,
+    "name": "에센셜 코튼 우주복 017",
+    "price": 39000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "에센셜 코튼 우주복 017은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "베이비 컴포트핏",
+      "material": "오가닉 코튼",
+      "color": ["크림", "베이지", "민트"],
+      "size": ["6M", "12M", "18M"],
+      "origin": "대한민국"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 128,
+    "created_at": "2026-08-17 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 18,
+    "category_id": 26,
+    "name": "에센셜 조거 팬츠 018",
+    "price": 59000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "에센셜 조거 팬츠 018은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 레귤러핏",
+      "material": "부드러운 코튼 혼방",
+      "color": ["아이보리", "블루", "옐로우"],
+      "size": ["110", "120", "130"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 165,
+    "created_at": "2026-09-18 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 19,
+    "category_id": 27,
+    "name": "에센셜 레인 부츠 019",
+    "price": 79000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "에센셜 레인 부츠 019은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 정사이즈",
+      "material": "경량 합성 소재",
+      "color": ["화이트", "핑크", "블루"],
+      "size": ["170", "180", "190"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 202,
+    "created_at": "2026-01-19 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 20,
+    "category_id": 28,
+    "name": "에센셜 버킷햇 020",
+    "price": 65000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "에센셜 버킷햇 020은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 프리 사이즈",
+      "material": "코튼 및 폴리에스터",
+      "color": ["베이지", "민트", "라벤더"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 239,
+    "created_at": "2026-02-20 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 21,
+    "category_id": 29,
+    "name": "에센셜 자석 퍼즐 021",
+    "price": 35000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "에센셜 자석 퍼즐 021은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "36개월 이상",
+      "material": "안전 인증 소재",
+      "color": ["멀티"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 276,
+    "created_at": "2026-03-21 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 22,
+    "category_id": 30,
+    "name": "에센셜 아기띠 022",
+    "price": 55000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "에센셜 아기띠 022은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "육아 편의 설계",
+      "material": "유아 안전 인증 소재",
+      "color": ["크림", "그레이", "민트"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 313,
+    "created_at": "2026-04-22 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 23,
+    "category_id": 6,
+    "name": "시그니처 니트 023",
+    "price": 79000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "시그니처 니트 023은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 350,
+    "created_at": "2026-05-23 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 24,
+    "category_id": 7,
+    "name": "시그니처 크로스백 024",
+    "price": 109000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "시그니처 크로스백 024은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 387,
+    "created_at": "2026-06-24 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 25,
+    "category_id": 8,
+    "name": "시그니처 메리제인 025",
+    "price": 129000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "시그니처 메리제인 025은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "합성가죽",
+      "color": ["블랙", "오프화이트", "브라운"],
+      "size": ["230", "240", "250"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 424,
+    "created_at": "2026-07-25 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 26,
+    "category_id": 9,
+    "name": "시그니처 울 머플러 026",
+    "price": 39000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "시그니처 울 머플러 026은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["실버", "블랙", "베이지"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 461,
+    "created_at": "2026-08-26 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 27,
+    "category_id": 10,
+    "name": "시그니처 트레이닝 탑 027",
+    "price": 79000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "시그니처 트레이닝 탑 027은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "기능성 폴리에스터",
+      "color": ["블랙", "네이비", "라벤더"],
+      "size": ["S", "M", "L"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 498,
+    "created_at": "2026-09-27 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 28,
     "category_id": 13,
-    "name": "그래픽 오버핏 후디",
+    "name": "시그니처 울 니트 028",
+    "price": 89000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "시그니처 울 니트 028은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "레귤러핏",
+      "material": "프리미엄 코튼 혼방",
+      "color": ["화이트", "차콜", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 34,
+    "created_at": "2026-01-01 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 29,
+    "category_id": 14,
+    "name": "시그니처 토트백 029",
+    "price": 119000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "시그니처 토트백 029은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "나일론 혼방",
+      "color": ["블랙", "카키", "브라운"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 71,
+    "created_at": "2026-02-02 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 30,
+    "category_id": 15,
+    "name": "시그니처 러닝화 030",
+    "price": 139000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "시그니처 러닝화 030은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "천연가죽 혼방",
+      "color": ["블랙", "화이트", "그레이"],
+      "size": ["260", "270", "280"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 108,
+    "created_at": "2026-03-03 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 31,
+    "category_id": 16,
+    "name": "시그니처 울 머플러 031",
+    "price": 49000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "시그니처 울 머플러 031은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["블랙", "실버", "네이비"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 145,
+    "created_at": "2026-04-04 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 32,
+    "category_id": 17,
+    "name": "시그니처 하이킹 팬츠 032",
+    "price": 69000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "시그니처 하이킹 팬츠 032은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "흡습속건 폴리에스터",
+      "color": ["블랙", "그레이", "블루"],
+      "size": ["M", "L", "XL"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 182,
+    "created_at": "2026-05-05 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 33,
+    "category_id": 19,
+    "name": "시그니처 클렌징 오일 033",
+    "price": 44000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "시그니처 클렌징 오일 033은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "모든 피부용",
+      "material": "피부 저자극 포뮬러",
+      "color": ["기본"],
+      "size": ["50ml", "100ml", "200ml"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 219,
+    "created_at": "2026-06-06 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 34,
+    "category_id": 20,
+    "name": "시그니처 크림 블러셔 034",
+    "price": 52000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "시그니처 크림 블러셔 034은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 메이크업",
+      "material": "고밀착 컬러 포뮬러",
+      "color": ["코랄", "로즈", "누드"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 256,
+    "created_at": "2026-07-07 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 35,
+    "category_id": 21,
+    "name": "시그니처 헤어 오일 035",
+    "price": 66000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "시그니처 헤어 오일 035은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "손상 모발용",
+      "material": "식물 유래 헤어 포뮬러",
+      "color": ["기본"],
+      "size": ["100ml", "300ml", "500ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 293,
+    "created_at": "2026-08-08 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 36,
+    "category_id": 22,
+    "name": "시그니처 핸드 크림 036",
+    "price": 19000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "시그니처 핸드 크림 036은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 케어",
+      "material": "보습 바디 포뮬러",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["50ml", "300ml"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 330,
+    "created_at": "2026-09-09 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 37,
+    "category_id": 23,
+    "name": "시그니처 헤어 퍼퓸 037",
+    "price": 79000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "시그니처 헤어 퍼퓸 037은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "유니섹스",
+      "material": "프리미엄 향료",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["30ml", "50ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 367,
+    "created_at": "2026-01-10 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 38,
+    "category_id": 24,
+    "name": "시그니처 미니 고데기 038",
+    "price": 139000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "시그니처 미니 고데기 038은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "홈 뷰티 케어",
+      "material": "ABS 및 실리콘",
+      "color": ["화이트", "핑크", "블랙"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 404,
+    "created_at": "2026-02-11 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 39,
+    "category_id": 25,
+    "name": "시그니처 니트 보닛 039",
+    "price": 59000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "시그니처 니트 보닛 039은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "베이비 컴포트핏",
+      "material": "오가닉 코튼",
+      "color": ["크림", "베이지", "민트"],
+      "size": ["6M", "12M", "18M"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 441,
+    "created_at": "2026-03-12 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 40,
+    "category_id": 26,
+    "name": "시그니처 데님 오버롤 040",
+    "price": 79000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "시그니처 데님 오버롤 040은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 레귤러핏",
+      "material": "부드러운 코튼 혼방",
+      "color": ["아이보리", "블루", "옐로우"],
+      "size": ["110", "120", "130"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 478,
+    "created_at": "2026-04-13 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 41,
+    "category_id": 27,
+    "name": "시그니처 키즈 스니커즈 041",
+    "price": 49000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "시그니처 키즈 스니커즈 041은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 정사이즈",
+      "material": "경량 합성 소재",
+      "color": ["화이트", "핑크", "블루"],
+      "size": ["170", "180", "190"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 14,
+    "created_at": "2026-05-14 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 42,
+    "category_id": 28,
+    "name": "시그니처 미니 백팩 042",
+    "price": 35000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "시그니처 미니 백팩 042은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 프리 사이즈",
+      "material": "코튼 및 폴리에스터",
+      "color": ["베이지", "민트", "라벤더"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 51,
+    "created_at": "2026-06-15 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 43,
+    "category_id": 29,
+    "name": "시그니처 우드 블록 세트 043",
+    "price": 55000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "시그니처 우드 블록 세트 043은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "36개월 이상",
+      "material": "안전 인증 소재",
+      "color": ["멀티"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 88,
+    "created_at": "2026-07-16 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 44,
+    "category_id": 30,
+    "name": "시그니처 휴대용 젖병 워머 044",
+    "price": 75000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "시그니처 휴대용 젖병 워머 044은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "육아 편의 설계",
+      "material": "유아 안전 인증 소재",
+      "color": ["크림", "그레이", "민트"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 125,
+    "created_at": "2026-08-17 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 45,
+    "category_id": 6,
+    "name": "프리미엄 재킷 045",
+    "price": 99000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "프리미엄 재킷 045은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
+      "size": ["S", "M", "L"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 162,
+    "created_at": "2026-09-18 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 46,
+    "category_id": 7,
+    "name": "프리미엄 미니백 046",
     "price": 79000,
     "discount_rate": 20,
     "description": {
-      "summary": "전면 그래픽이 돋보이는 스트릿 감성의 후디입니다.",
-      "fit": "오버핏",
-      "material": "면 80%, 폴리에스터 20%",
-      "color": ["블랙", "멜란지"],
-      "size": ["M", "L", "XL"],
+      "summary": "프리미엄 미니백 046은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
       "origin": "대한민국"
     },
     "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-06-03 13:17:52",
-    "thumbnail_url": null
+    "like_count": 199,
+    "created_at": "2026-01-19 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
   },
   {
-    "brand_id": 2,
-    "category_id": 13,
-    "name": "카고 조거 팬츠",
-    "price": 89000,
-    "discount_rate": 15,
-    "description": {
-      "summary": "활동성과 디자인을 모두 고려한 카고 팬츠입니다.",
-      "fit": "조거핏",
-      "material": "면 97%, 스판 3%",
-      "color": ["카키", "블랙"],
-      "size": ["M", "L", "XL"],
-      "origin": "대한민국"
-    },
-    "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-04-29 08:43:14",
-    "thumbnail_url": null
-  },
-  {
-    "brand_id": 2,
-    "category_id": 13,
-    "name": "워시드 데님 자켓",
-    "price": 129000,
+    "brand_id": 47,
+    "category_id": 8,
+    "name": "프리미엄 플랫 슈즈 047",
+    "price": 99000,
     "discount_rate": 25,
     "description": {
-      "summary": "빈티지 워싱이 매력적인 데님 자켓입니다.",
-      "fit": "세미오버핏",
-      "material": "면 100%",
-      "color": ["인디고"],
-      "size": ["M", "L", "XL"],
+      "summary": "프리미엄 플랫 슈즈 047은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "합성가죽",
+      "color": ["블랙", "오프화이트", "브라운"],
+      "size": ["230", "240", "250"],
       "origin": "대한민국"
     },
     "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-03-30 19:11:26",
-    "thumbnail_url": null
+    "like_count": 236,
+    "created_at": "2026-02-20 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
   },
   {
-    "brand_id": 2,
-    "category_id": 13,
-    "name": "피그먼트 반팔 티셔츠",
-    "price": 45000,
+    "brand_id": 48,
+    "category_id": 9,
+    "name": "프리미엄 미니 이어링 048",
+    "price": 59000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "프리미엄 미니 이어링 048은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["실버", "블랙", "베이지"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 273,
+    "created_at": "2026-03-21 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 49,
+    "category_id": 10,
+    "name": "프리미엄 요가 레깅스 049",
+    "price": 99000,
     "discount_rate": 0,
     "description": {
-      "summary": "피그먼트 워싱으로 자연스러운 컬러감을 더한 반팔 티셔츠입니다.",
-      "fit": "루즈핏",
-      "material": "면 100%",
-      "color": ["차콜", "올리브"],
+      "summary": "프리미엄 요가 레깅스 049은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "기능성 폴리에스터",
+      "color": ["블랙", "네이비", "라벤더"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 310,
+    "created_at": "2026-04-22 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 50,
+    "category_id": 13,
+    "name": "프리미엄 와이드 슬랙스 050",
+    "price": 109000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "프리미엄 와이드 슬랙스 050은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "레귤러핏",
+      "material": "프리미엄 코튼 혼방",
+      "color": ["화이트", "차콜", "네이비"],
       "size": ["M", "L", "XL"],
       "origin": "대한민국"
     },
     "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-02-11 16:22:18",
-    "thumbnail_url": null
+    "like_count": 347,
+    "created_at": "2026-05-23 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 1,
+    "category_id": 14,
+    "name": "프리미엄 메신저백 051",
+    "price": 89000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "프리미엄 메신저백 051은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "나일론 혼방",
+      "color": ["블랙", "카키", "브라운"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 384,
+    "created_at": "2026-06-24 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
   },
   {
     "brand_id": 2,
+    "category_id": 15,
+    "name": "프리미엄 독일군 스니커즈 052",
+    "price": 109000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "프리미엄 독일군 스니커즈 052은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "천연가죽 혼방",
+      "color": ["블랙", "화이트", "그레이"],
+      "size": ["260", "270", "280"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 421,
+    "created_at": "2026-07-25 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 3,
     "category_id": 16,
-    "name": "로고 볼캡",
+    "name": "프리미엄 메탈 워치 053",
+    "price": 69000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "프리미엄 메탈 워치 053은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["블랙", "실버", "네이비"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "HIDDEN",
+    "like_count": 458,
+    "created_at": "2026-08-26 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 4,
+    "category_id": 17,
+    "name": "프리미엄 트랙 재킷 054",
+    "price": 89000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "프리미엄 트랙 재킷 054은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "흡습속건 폴리에스터",
+      "color": ["블랙", "그레이", "블루"],
+      "size": ["M", "L", "XL"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 495,
+    "created_at": "2026-09-27 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 5,
+    "category_id": 19,
+    "name": "프리미엄 수분 진정 토너 055",
+    "price": 64000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "프리미엄 수분 진정 토너 055은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "모든 피부용",
+      "material": "피부 저자극 포뮬러",
+      "color": ["기본"],
+      "size": ["50ml", "100ml", "200ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 31,
+    "created_at": "2026-01-01 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 6,
+    "category_id": 20,
+    "name": "프리미엄 벨벳 립 틴트 056",
+    "price": 22000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "프리미엄 벨벳 립 틴트 056은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 메이크업",
+      "material": "고밀착 컬러 포뮬러",
+      "color": ["코랄", "로즈", "누드"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 68,
+    "created_at": "2026-02-02 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 7,
+    "category_id": 21,
+    "name": "프리미엄 리페어 트리트먼트 057",
+    "price": 36000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "프리미엄 리페어 트리트먼트 057은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "손상 모발용",
+      "material": "식물 유래 헤어 포뮬러",
+      "color": ["기본"],
+      "size": ["100ml", "300ml", "500ml"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 105,
+    "created_at": "2026-03-03 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 8,
+    "category_id": 22,
+    "name": "프리미엄 시어버터 로션 058",
     "price": 39000,
     "discount_rate": 10,
     "description": {
-      "summary": "심플한 로고 자수가 포인트인 데일리 볼캡입니다.",
-      "fit": "FREE",
-      "material": "면 100%",
-      "color": ["블랙", "네이비", "베이지"],
-      "size": ["FREE"],
+      "summary": "프리미엄 시어버터 로션 058은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 케어",
+      "material": "보습 바디 포뮬러",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["50ml", "300ml"],
       "origin": "대한민국"
     },
     "status": "ACTIVE",
-    "like_count": 0,
-    "created_at": "2026-07-01 12:55:41",
-    "thumbnail_url": null
+    "like_count": 142,
+    "created_at": "2026-04-04 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 9,
+    "category_id": 23,
+    "name": "프리미엄 솔리드 퍼퓸 059",
+    "price": 99000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "프리미엄 솔리드 퍼퓸 059은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "유니섹스",
+      "material": "프리미엄 향료",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["30ml", "50ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 179,
+    "created_at": "2026-05-05 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 10,
+    "category_id": 24,
+    "name": "프리미엄 진동 클렌저 060",
+    "price": 159000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "프리미엄 진동 클렌저 060은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "홈 뷰티 케어",
+      "material": "ABS 및 실리콘",
+      "color": ["화이트", "핑크", "블랙"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 216,
+    "created_at": "2026-06-06 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 11,
+    "category_id": 25,
+    "name": "프리미엄 베이비 턱받이 061",
+    "price": 29000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "프리미엄 베이비 턱받이 061은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "베이비 컴포트핏",
+      "material": "오가닉 코튼",
+      "color": ["크림", "베이지", "민트"],
+      "size": ["6M", "12M", "18M"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 253,
+    "created_at": "2026-07-07 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 12,
+    "category_id": 26,
+    "name": "프리미엄 조거 팬츠 062",
+    "price": 49000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "프리미엄 조거 팬츠 062은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 레귤러핏",
+      "material": "부드러운 코튼 혼방",
+      "color": ["아이보리", "블루", "옐로우"],
+      "size": ["110", "120", "130"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 290,
+    "created_at": "2026-08-08 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 13,
+    "category_id": 27,
+    "name": "프리미엄 벨크로 샌들 063",
+    "price": 69000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "프리미엄 벨크로 샌들 063은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 정사이즈",
+      "material": "경량 합성 소재",
+      "color": ["화이트", "핑크", "블루"],
+      "size": ["170", "180", "190"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 327,
+    "created_at": "2026-09-09 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 14,
+    "category_id": 28,
+    "name": "프리미엄 캐릭터 양말 064",
+    "price": 55000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "프리미엄 캐릭터 양말 064은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 프리 사이즈",
+      "material": "코튼 및 폴리에스터",
+      "color": ["베이지", "민트", "라벤더"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 364,
+    "created_at": "2026-01-10 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 15,
+    "category_id": 29,
+    "name": "프리미엄 자석 퍼즐 065",
+    "price": 75000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "프리미엄 자석 퍼즐 065은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "36개월 이상",
+      "material": "안전 인증 소재",
+      "color": ["멀티"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 401,
+    "created_at": "2026-02-11 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 16,
+    "category_id": 30,
+    "name": "프리미엄 아기띠 066",
+    "price": 45000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "프리미엄 아기띠 066은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "육아 편의 설계",
+      "material": "유아 안전 인증 소재",
+      "color": ["크림", "그레이", "민트"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 438,
+    "created_at": "2026-03-12 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 17,
+    "category_id": 6,
+    "name": "클래식 슬랙스 067",
+    "price": 69000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "클래식 슬랙스 067은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 475,
+    "created_at": "2026-04-13 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 18,
+    "category_id": 7,
+    "name": "클래식 토트백 068",
+    "price": 99000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "클래식 토트백 068은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 11,
+    "created_at": "2026-05-14 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 19,
+    "category_id": 8,
+    "name": "클래식 스니커즈 069",
+    "price": 119000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "클래식 스니커즈 069은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "합성가죽",
+      "color": ["블랙", "오프화이트", "브라운"],
+      "size": ["230", "240", "250"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 48,
+    "created_at": "2026-06-15 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 20,
+    "category_id": 9,
+    "name": "클래식 레더 벨트 070",
+    "price": 79000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "클래식 레더 벨트 070은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["실버", "블랙", "베이지"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 85,
+    "created_at": "2026-07-16 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 21,
+    "category_id": 10,
+    "name": "클래식 테니스 스커트 071",
+    "price": 69000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "클래식 테니스 스커트 071은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "기능성 폴리에스터",
+      "color": ["블랙", "네이비", "라벤더"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 122,
+    "created_at": "2026-08-17 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 22,
+    "category_id": 13,
+    "name": "클래식 트렌치 코트 072",
+    "price": 79000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "클래식 트렌치 코트 072은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "레귤러핏",
+      "material": "프리미엄 코튼 혼방",
+      "color": ["화이트", "차콜", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 159,
+    "created_at": "2026-09-18 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 23,
+    "category_id": 14,
+    "name": "클래식 웨이스트백 073",
+    "price": 109000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "클래식 웨이스트백 073은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "나일론 혼방",
+      "color": ["블랙", "카키", "브라운"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 196,
+    "created_at": "2026-01-19 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 24,
+    "category_id": 15,
+    "name": "클래식 러닝화 074",
+    "price": 129000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "클래식 러닝화 074은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "천연가죽 혼방",
+      "color": ["블랙", "화이트", "그레이"],
+      "size": ["260", "270", "280"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 233,
+    "created_at": "2026-02-20 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 25,
+    "category_id": 16,
+    "name": "클래식 코튼 볼캡 075",
+    "price": 89000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "클래식 코튼 볼캡 075은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["블랙", "실버", "네이비"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 270,
+    "created_at": "2026-03-21 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 26,
+    "category_id": 17,
+    "name": "클래식 하이킹 팬츠 076",
+    "price": 59000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "클래식 하이킹 팬츠 076은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "흡습속건 폴리에스터",
+      "color": ["블랙", "그레이", "블루"],
+      "size": ["M", "L", "XL"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 307,
+    "created_at": "2026-04-22 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 27,
+    "category_id": 19,
+    "name": "클래식 비타민 세럼 077",
+    "price": 34000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "클래식 비타민 세럼 077은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "모든 피부용",
+      "material": "피부 저자극 포뮬러",
+      "color": ["기본"],
+      "size": ["50ml", "100ml", "200ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 344,
+    "created_at": "2026-05-23 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 28,
+    "category_id": 20,
+    "name": "클래식 아이 팔레트 078",
+    "price": 42000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "클래식 아이 팔레트 078은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 메이크업",
+      "material": "고밀착 컬러 포뮬러",
+      "color": ["코랄", "로즈", "누드"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 381,
+    "created_at": "2026-06-24 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 29,
+    "category_id": 21,
+    "name": "클래식 헤어 오일 079",
+    "price": 56000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "클래식 헤어 오일 079은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "손상 모발용",
+      "material": "식물 유래 헤어 포뮬러",
+      "color": ["기본"],
+      "size": ["100ml", "300ml", "500ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 418,
+    "created_at": "2026-07-25 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 30,
+    "category_id": 22,
+    "name": "클래식 핸드 크림 080",
+    "price": 59000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "클래식 핸드 크림 080은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 케어",
+      "material": "보습 바디 포뮬러",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["50ml", "300ml"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 455,
+    "created_at": "2026-08-26 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 31,
+    "category_id": 23,
+    "name": "클래식 오 드 퍼퓸 081",
+    "price": 69000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "클래식 오 드 퍼퓸 081은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "유니섹스",
+      "material": "프리미엄 향료",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["30ml", "50ml"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 492,
+    "created_at": "2026-09-27 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 32,
+    "category_id": 24,
+    "name": "클래식 LED 마스크 082",
+    "price": 129000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "클래식 LED 마스크 082은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "홈 뷰티 케어",
+      "material": "ABS 및 실리콘",
+      "color": ["화이트", "핑크", "블랙"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 28,
+    "created_at": "2026-01-01 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 33,
+    "category_id": 25,
+    "name": "클래식 오가닉 바디수트 083",
+    "price": 49000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "클래식 오가닉 바디수트 083은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "베이비 컴포트핏",
+      "material": "오가닉 코튼",
+      "color": ["크림", "베이지", "민트"],
+      "size": ["6M", "12M", "18M"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 65,
+    "created_at": "2026-02-02 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 34,
+    "category_id": 26,
+    "name": "클래식 데님 오버롤 084",
+    "price": 69000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "클래식 데님 오버롤 084은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 레귤러핏",
+      "material": "부드러운 코튼 혼방",
+      "color": ["아이보리", "블루", "옐로우"],
+      "size": ["110", "120", "130"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 102,
+    "created_at": "2026-03-03 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 35,
+    "category_id": 27,
+    "name": "클래식 키즈 스니커즈 085",
+    "price": 89000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "클래식 키즈 스니커즈 085은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 정사이즈",
+      "material": "경량 합성 소재",
+      "color": ["화이트", "핑크", "블루"],
+      "size": ["170", "180", "190"],
+      "origin": "대한민국"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 139,
+    "created_at": "2026-04-04 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 36,
+    "category_id": 28,
+    "name": "클래식 미니 백팩 086",
+    "price": 25000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "클래식 미니 백팩 086은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 프리 사이즈",
+      "material": "코튼 및 폴리에스터",
+      "color": ["베이지", "민트", "라벤더"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 176,
+    "created_at": "2026-05-05 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 37,
+    "category_id": 29,
+    "name": "클래식 우드 블록 세트 087",
+    "price": 45000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "클래식 우드 블록 세트 087은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "36개월 이상",
+      "material": "안전 인증 소재",
+      "color": ["멀티"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 213,
+    "created_at": "2026-06-06 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 38,
+    "category_id": 30,
+    "name": "클래식 휴대용 젖병 워머 088",
+    "price": 65000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "클래식 휴대용 젖병 워머 088은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "육아 편의 설계",
+      "material": "유아 안전 인증 소재",
+      "color": ["크림", "그레이", "민트"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 250,
+    "created_at": "2026-07-07 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 39,
+    "category_id": 6,
+    "name": "컴포트 셔츠 089",
+    "price": 89000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "컴포트 셔츠 089은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 287,
+    "created_at": "2026-08-08 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 40,
+    "category_id": 7,
+    "name": "컴포트 버킷백 090",
+    "price": 119000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "컴포트 버킷백 090은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 324,
+    "created_at": "2026-09-09 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 41,
+    "category_id": 8,
+    "name": "컴포트 플랫 슈즈 091",
+    "price": 89000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "컴포트 플랫 슈즈 091은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "합성가죽",
+      "color": ["블랙", "오프화이트", "브라운"],
+      "size": ["230", "240", "250"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 361,
+    "created_at": "2026-01-10 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 42,
+    "category_id": 9,
+    "name": "컴포트 미니 이어링 092",
+    "price": 49000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "컴포트 미니 이어링 092은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["실버", "블랙", "베이지"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 398,
+    "created_at": "2026-02-11 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 43,
+    "category_id": 10,
+    "name": "컴포트 러닝 재킷 093",
+    "price": 89000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "컴포트 러닝 재킷 093은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "기능성 폴리에스터",
+      "color": ["블랙", "네이비", "라벤더"],
+      "size": ["S", "M", "L"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 435,
+    "created_at": "2026-03-12 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 44,
+    "category_id": 13,
+    "name": "컴포트 코튼 티셔츠 094",
+    "price": 99000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "컴포트 코튼 티셔츠 094은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "레귤러핏",
+      "material": "프리미엄 코튼 혼방",
+      "color": ["화이트", "차콜", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 472,
+    "created_at": "2026-04-13 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 45,
+    "category_id": 14,
+    "name": "컴포트 메신저백 095",
+    "price": 129000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "컴포트 메신저백 095은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "나일론 혼방",
+      "color": ["블랙", "카키", "브라운"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 8,
+    "created_at": "2026-05-14 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 46,
+    "category_id": 15,
+    "name": "컴포트 슬라이드 096",
+    "price": 99000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "컴포트 슬라이드 096은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "천연가죽 혼방",
+      "color": ["블랙", "화이트", "그레이"],
+      "size": ["260", "270", "280"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 45,
+    "created_at": "2026-06-15 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 47,
+    "category_id": 16,
+    "name": "컴포트 카드 지갑 097",
+    "price": 59000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "컴포트 카드 지갑 097은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["블랙", "실버", "네이비"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 82,
+    "created_at": "2026-07-16 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 48,
+    "category_id": 17,
+    "name": "컴포트 트랙 재킷 098",
+    "price": 79000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "컴포트 트랙 재킷 098은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "흡습속건 폴리에스터",
+      "color": ["블랙", "그레이", "블루"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 119,
+    "created_at": "2026-08-17 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 49,
+    "category_id": 19,
+    "name": "컴포트 선 에센스 099",
+    "price": 54000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "컴포트 선 에센스 099은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "모든 피부용",
+      "material": "피부 저자극 포뮬러",
+      "color": ["기본"],
+      "size": ["50ml", "100ml", "200ml"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 156,
+    "created_at": "2026-09-18 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 50,
+    "category_id": 20,
+    "name": "컴포트 롱래시 마스카라 100",
+    "price": 62000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "컴포트 롱래시 마스카라 100은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 메이크업",
+      "material": "고밀착 컬러 포뮬러",
+      "color": ["코랄", "로즈", "누드"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 193,
+    "created_at": "2026-01-19 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 1,
+    "category_id": 21,
+    "name": "컴포트 두피 토닉 101",
+    "price": 26000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "컴포트 두피 토닉 101은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "손상 모발용",
+      "material": "식물 유래 헤어 포뮬러",
+      "color": ["기본"],
+      "size": ["100ml", "300ml", "500ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 230,
+    "created_at": "2026-02-20 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 2,
+    "category_id": 22,
+    "name": "컴포트 바디 스크럽 102",
+    "price": 29000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "컴포트 바디 스크럽 102은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 케어",
+      "material": "보습 바디 포뮬러",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["50ml", "300ml"],
+      "origin": "베트남"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 267,
+    "created_at": "2026-03-21 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 3,
+    "category_id": 23,
+    "name": "컴포트 룸 프래그런스 103",
+    "price": 89000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "컴포트 룸 프래그런스 103은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "유니섹스",
+      "material": "프리미엄 향료",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["30ml", "50ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 304,
+    "created_at": "2026-04-22 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 4,
+    "category_id": 24,
+    "name": "컴포트 두피 마사지기 104",
+    "price": 149000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "컴포트 두피 마사지기 104은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "홈 뷰티 케어",
+      "material": "ABS 및 실리콘",
+      "color": ["화이트", "핑크", "블랙"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 341,
+    "created_at": "2026-05-23 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 5,
+    "category_id": 25,
+    "name": "컴포트 베이비 턱받이 105",
+    "price": 69000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "컴포트 베이비 턱받이 105은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "베이비 컴포트핏",
+      "material": "오가닉 코튼",
+      "color": ["크림", "베이지", "민트"],
+      "size": ["6M", "12M", "18M"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 378,
+    "created_at": "2026-06-24 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 6,
+    "category_id": 26,
+    "name": "컴포트 키즈 맨투맨 106",
+    "price": 39000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "컴포트 키즈 맨투맨 106은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 레귤러핏",
+      "material": "부드러운 코튼 혼방",
+      "color": ["아이보리", "블루", "옐로우"],
+      "size": ["110", "120", "130"],
+      "origin": "대한민국"
+    },
+    "status": "HIDDEN",
+    "like_count": 415,
+    "created_at": "2026-07-25 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 7,
+    "category_id": 27,
+    "name": "컴포트 벨크로 샌들 107",
+    "price": 59000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "컴포트 벨크로 샌들 107은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 정사이즈",
+      "material": "경량 합성 소재",
+      "color": ["화이트", "핑크", "블루"],
+      "size": ["170", "180", "190"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 452,
+    "created_at": "2026-08-26 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 8,
+    "category_id": 28,
+    "name": "컴포트 캐릭터 양말 108",
+    "price": 45000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "컴포트 캐릭터 양말 108은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 프리 사이즈",
+      "material": "코튼 및 폴리에스터",
+      "color": ["베이지", "민트", "라벤더"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 489,
+    "created_at": "2026-09-27 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 9,
+    "category_id": 29,
+    "name": "컴포트 자석 퍼즐 109",
+    "price": 65000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "컴포트 자석 퍼즐 109은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "36개월 이상",
+      "material": "안전 인증 소재",
+      "color": ["멀티"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 25,
+    "created_at": "2026-01-01 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 10,
+    "category_id": 30,
+    "name": "컴포트 아기띠 110",
+    "price": 85000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "컴포트 아기띠 110은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "육아 편의 설계",
+      "material": "유아 안전 인증 소재",
+      "color": ["크림", "그레이", "민트"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 62,
+    "created_at": "2026-02-02 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 11,
+    "category_id": 6,
+    "name": "모던 카디건 111",
+    "price": 59000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "모던 카디건 111은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
+      "size": ["S", "M", "L"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 99,
+    "created_at": "2026-03-03 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 12,
+    "category_id": 7,
+    "name": "모던 토트백 112",
+    "price": 89000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "모던 토트백 112은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 136,
+    "created_at": "2026-04-04 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 13,
+    "category_id": 8,
+    "name": "모던 스니커즈 113",
+    "price": 109000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "모던 스니커즈 113은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "합성가죽",
+      "color": ["블랙", "오프화이트", "브라운"],
+      "size": ["230", "240", "250"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 173,
+    "created_at": "2026-05-05 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 14,
+    "category_id": 9,
+    "name": "모던 레더 벨트 114",
+    "price": 69000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "모던 레더 벨트 114은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["실버", "블랙", "베이지"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 210,
+    "created_at": "2026-06-06 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 15,
+    "category_id": 10,
+    "name": "모던 테니스 스커트 115",
+    "price": 109000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "모던 테니스 스커트 115은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "기능성 폴리에스터",
+      "color": ["블랙", "네이비", "라벤더"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 247,
+    "created_at": "2026-07-07 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 16,
+    "category_id": 13,
+    "name": "모던 블루종 116",
+    "price": 69000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "모던 블루종 116은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "레귤러핏",
+      "material": "프리미엄 코튼 혼방",
+      "color": ["화이트", "차콜", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 284,
+    "created_at": "2026-08-08 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 17,
+    "category_id": 14,
+    "name": "모던 웨이스트백 117",
+    "price": 99000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "모던 웨이스트백 117은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "나일론 혼방",
+      "color": ["블랙", "카키", "브라운"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 321,
+    "created_at": "2026-09-09 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 18,
+    "category_id": 15,
+    "name": "모던 더비 슈즈 118",
+    "price": 119000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "모던 더비 슈즈 118은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "천연가죽 혼방",
+      "color": ["블랙", "화이트", "그레이"],
+      "size": ["260", "270", "280"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 358,
+    "created_at": "2026-01-10 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 19,
+    "category_id": 16,
+    "name": "모던 레더 벨트 119",
+    "price": 79000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "모던 레더 벨트 119은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["블랙", "실버", "네이비"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 395,
+    "created_at": "2026-02-11 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 20,
+    "category_id": 17,
+    "name": "모던 하이킹 팬츠 120",
+    "price": 99000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "모던 하이킹 팬츠 120은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "흡습속건 폴리에스터",
+      "color": ["블랙", "그레이", "블루"],
+      "size": ["M", "L", "XL"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 432,
+    "created_at": "2026-03-12 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 21,
+    "category_id": 19,
+    "name": "모던 비타민 세럼 121",
+    "price": 24000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "모던 비타민 세럼 121은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "모든 피부용",
+      "material": "피부 저자극 포뮬러",
+      "color": ["기본"],
+      "size": ["50ml", "100ml", "200ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 469,
+    "created_at": "2026-04-13 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 22,
+    "category_id": 20,
+    "name": "모던 아이 팔레트 122",
+    "price": 32000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "모던 아이 팔레트 122은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 메이크업",
+      "material": "고밀착 컬러 포뮬러",
+      "color": ["코랄", "로즈", "누드"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 5,
+    "created_at": "2026-05-14 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 23,
+    "category_id": 21,
+    "name": "모던 단백질 샴푸 123",
+    "price": 46000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "모던 단백질 샴푸 123은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "손상 모발용",
+      "material": "식물 유래 헤어 포뮬러",
+      "color": ["기본"],
+      "size": ["100ml", "300ml", "500ml"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 42,
+    "created_at": "2026-06-15 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 24,
+    "category_id": 22,
+    "name": "모던 퍼퓸 바디워시 124",
+    "price": 49000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "모던 퍼퓸 바디워시 124은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 케어",
+      "material": "보습 바디 포뮬러",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["50ml", "300ml"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 79,
+    "created_at": "2026-07-16 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 25,
+    "category_id": 23,
+    "name": "모던 오 드 퍼퓸 125",
+    "price": 109000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "모던 오 드 퍼퓸 125은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "유니섹스",
+      "material": "프리미엄 향료",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["30ml", "50ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 116,
+    "created_at": "2026-08-17 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 26,
+    "category_id": 24,
+    "name": "모던 LED 마스크 126",
+    "price": 119000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "모던 LED 마스크 126은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "홈 뷰티 케어",
+      "material": "ABS 및 실리콘",
+      "color": ["화이트", "핑크", "블랙"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 153,
+    "created_at": "2026-09-18 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 27,
+    "category_id": 25,
+    "name": "모던 오가닉 바디수트 127",
+    "price": 39000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "모던 오가닉 바디수트 127은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "베이비 컴포트핏",
+      "material": "오가닉 코튼",
+      "color": ["크림", "베이지", "민트"],
+      "size": ["6M", "12M", "18M"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 190,
+    "created_at": "2026-01-19 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 28,
+    "category_id": 26,
+    "name": "모던 윈드브레이커 128",
+    "price": 59000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "모던 윈드브레이커 128은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 레귤러핏",
+      "material": "부드러운 코튼 혼방",
+      "color": ["아이보리", "블루", "옐로우"],
+      "size": ["110", "120", "130"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 227,
+    "created_at": "2026-02-20 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 29,
+    "category_id": 27,
+    "name": "모던 키즈 스니커즈 129",
+    "price": 79000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "모던 키즈 스니커즈 129은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 정사이즈",
+      "material": "경량 합성 소재",
+      "color": ["화이트", "핑크", "블루"],
+      "size": ["170", "180", "190"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 264,
+    "created_at": "2026-03-21 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 30,
+    "category_id": 28,
+    "name": "모던 미니 백팩 130",
+    "price": 65000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "모던 미니 백팩 130은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 프리 사이즈",
+      "material": "코튼 및 폴리에스터",
+      "color": ["베이지", "민트", "라벤더"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 301,
+    "created_at": "2026-04-22 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 31,
+    "category_id": 29,
+    "name": "모던 역할놀이 키트 131",
+    "price": 35000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "모던 역할놀이 키트 131은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "36개월 이상",
+      "material": "안전 인증 소재",
+      "color": ["멀티"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 338,
+    "created_at": "2026-05-23 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 32,
+    "category_id": 30,
+    "name": "모던 실리콘 이유식기 132",
+    "price": 55000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "모던 실리콘 이유식기 132은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "육아 편의 설계",
+      "material": "유아 안전 인증 소재",
+      "color": ["크림", "그레이", "민트"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 375,
+    "created_at": "2026-06-24 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 33,
+    "category_id": 6,
+    "name": "데일리 원피스 133",
+    "price": 79000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "데일리 원피스 133은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 412,
+    "created_at": "2026-07-25 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 34,
+    "category_id": 7,
+    "name": "데일리 버킷백 134",
+    "price": 109000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "데일리 버킷백 134은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 449,
+    "created_at": "2026-08-26 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 35,
+    "category_id": 8,
+    "name": "데일리 앵클 부츠 135",
+    "price": 129000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "데일리 앵클 부츠 135은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "합성가죽",
+      "color": ["블랙", "오프화이트", "브라운"],
+      "size": ["230", "240", "250"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 486,
+    "created_at": "2026-09-27 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 36,
+    "category_id": 9,
+    "name": "데일리 볼캡 136",
+    "price": 39000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "데일리 볼캡 136은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["실버", "블랙", "베이지"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 22,
+    "created_at": "2026-01-01 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 37,
+    "category_id": 10,
+    "name": "데일리 러닝 재킷 137",
+    "price": 79000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "데일리 러닝 재킷 137은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "기능성 폴리에스터",
+      "color": ["블랙", "네이비", "라벤더"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 59,
+    "created_at": "2026-02-02 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 38,
+    "category_id": 13,
+    "name": "데일리 데님 팬츠 138",
+    "price": 89000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "데일리 데님 팬츠 138은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "레귤러핏",
+      "material": "프리미엄 코튼 혼방",
+      "color": ["화이트", "차콜", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 96,
+    "created_at": "2026-03-03 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 39,
+    "category_id": 14,
+    "name": "데일리 메신저백 139",
+    "price": 119000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "데일리 메신저백 139은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "나일론 혼방",
+      "color": ["블랙", "카키", "브라운"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 133,
+    "created_at": "2026-04-04 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 40,
+    "category_id": 15,
+    "name": "데일리 첼시 부츠 140",
+    "price": 139000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "데일리 첼시 부츠 140은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "천연가죽 혼방",
+      "color": ["블랙", "화이트", "그레이"],
+      "size": ["260", "270", "280"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 170,
+    "created_at": "2026-05-05 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 41,
+    "category_id": 16,
+    "name": "데일리 카드 지갑 141",
+    "price": 49000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "데일리 카드 지갑 141은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["블랙", "실버", "네이비"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 207,
+    "created_at": "2026-06-06 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 42,
+    "category_id": 17,
+    "name": "데일리 컴프레션 탑 142",
+    "price": 69000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "데일리 컴프레션 탑 142은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "흡습속건 폴리에스터",
+      "color": ["블랙", "그레이", "블루"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 244,
+    "created_at": "2026-07-07 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 43,
+    "category_id": 19,
+    "name": "데일리 선 에센스 143",
+    "price": 44000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "데일리 선 에센스 143은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "모든 피부용",
+      "material": "피부 저자극 포뮬러",
+      "color": ["기본"],
+      "size": ["50ml", "100ml", "200ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 281,
+    "created_at": "2026-08-08 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 44,
+    "category_id": 20,
+    "name": "데일리 롱래시 마스카라 144",
+    "price": 52000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "데일리 롱래시 마스카라 144은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 메이크업",
+      "material": "고밀착 컬러 포뮬러",
+      "color": ["코랄", "로즈", "누드"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 318,
+    "created_at": "2026-09-09 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 45,
+    "category_id": 21,
+    "name": "데일리 두피 토닉 145",
+    "price": 66000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "데일리 두피 토닉 145은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "손상 모발용",
+      "material": "식물 유래 헤어 포뮬러",
+      "color": ["기본"],
+      "size": ["100ml", "300ml", "500ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 355,
+    "created_at": "2026-01-10 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 46,
+    "category_id": 22,
+    "name": "데일리 바디 스크럽 146",
+    "price": 19000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "데일리 바디 스크럽 146은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 케어",
+      "material": "보습 바디 포뮬러",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["50ml", "300ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 392,
+    "created_at": "2026-02-11 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 47,
+    "category_id": 23,
+    "name": "데일리 룸 프래그런스 147",
+    "price": 79000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "데일리 룸 프래그런스 147은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "유니섹스",
+      "material": "프리미엄 향료",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["30ml", "50ml"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 429,
+    "created_at": "2026-03-12 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 48,
+    "category_id": 24,
+    "name": "데일리 두피 마사지기 148",
+    "price": 139000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "데일리 두피 마사지기 148은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "홈 뷰티 케어",
+      "material": "ABS 및 실리콘",
+      "color": ["화이트", "핑크", "블랙"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 466,
+    "created_at": "2026-04-13 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 49,
+    "category_id": 25,
+    "name": "데일리 베이비 턱받이 149",
+    "price": 59000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "데일리 베이비 턱받이 149은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "베이비 컴포트핏",
+      "material": "오가닉 코튼",
+      "color": ["크림", "베이지", "민트"],
+      "size": ["6M", "12M", "18M"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 2,
+    "created_at": "2026-05-14 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 50,
+    "category_id": 26,
+    "name": "데일리 플레어 원피스 150",
+    "price": 79000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "데일리 플레어 원피스 150은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 레귤러핏",
+      "material": "부드러운 코튼 혼방",
+      "color": ["아이보리", "블루", "옐로우"],
+      "size": ["110", "120", "130"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 39,
+    "created_at": "2026-06-15 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 1,
+    "category_id": 27,
+    "name": "데일리 퍼 슬립온 151",
+    "price": 49000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "데일리 퍼 슬립온 151은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 정사이즈",
+      "material": "경량 합성 소재",
+      "color": ["화이트", "핑크", "블루"],
+      "size": ["170", "180", "190"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 76,
+    "created_at": "2026-07-16 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 2,
+    "category_id": 28,
+    "name": "데일리 보온 머플러 152",
+    "price": 35000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "데일리 보온 머플러 152은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 프리 사이즈",
+      "material": "코튼 및 폴리에스터",
+      "color": ["베이지", "민트", "라벤더"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 113,
+    "created_at": "2026-08-17 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 3,
+    "category_id": 29,
+    "name": "데일리 촉감 인형 153",
+    "price": 55000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "데일리 촉감 인형 153은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "36개월 이상",
+      "material": "안전 인증 소재",
+      "color": ["멀티"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 150,
+    "created_at": "2026-09-18 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 4,
+    "category_id": 30,
+    "name": "데일리 수유 쿠션 154",
+    "price": 75000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "데일리 수유 쿠션 154은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "육아 편의 설계",
+      "material": "유아 안전 인증 소재",
+      "color": ["크림", "그레이", "민트"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 187,
+    "created_at": "2026-01-19 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 5,
+    "category_id": 6,
+    "name": "라이트 스커트 155",
+    "price": 99000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "라이트 스커트 155은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 224,
+    "created_at": "2026-02-20 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 6,
+    "category_id": 7,
+    "name": "라이트 숄더백 156",
+    "price": 79000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "라이트 숄더백 156은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 261,
+    "created_at": "2026-03-21 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 7,
+    "category_id": 8,
+    "name": "라이트 로퍼 157",
+    "price": 99000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "라이트 로퍼 157은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "합성가죽",
+      "color": ["블랙", "오프화이트", "브라운"],
+      "size": ["230", "240", "250"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 298,
+    "created_at": "2026-04-22 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 8,
+    "category_id": 9,
+    "name": "라이트 실버 네크리스 158",
+    "price": 59000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "라이트 실버 네크리스 158은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["실버", "블랙", "베이지"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 335,
+    "created_at": "2026-05-23 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 9,
+    "category_id": 10,
+    "name": "라이트 테니스 스커트 159",
+    "price": 99000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "라이트 테니스 스커트 159은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "기능성 폴리에스터",
+      "color": ["블랙", "네이비", "라벤더"],
+      "size": ["S", "M", "L"],
+      "origin": "베트남"
+    },
+    "status": "HIDDEN",
+    "like_count": 372,
+    "created_at": "2026-06-24 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 10,
+    "category_id": 13,
+    "name": "라이트 트렌치 코트 160",
+    "price": 109000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "라이트 트렌치 코트 160은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "레귤러핏",
+      "material": "프리미엄 코튼 혼방",
+      "color": ["화이트", "차콜", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 409,
+    "created_at": "2026-07-25 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 11,
+    "category_id": 14,
+    "name": "라이트 레더 백팩 161",
+    "price": 89000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "라이트 레더 백팩 161은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "나일론 혼방",
+      "color": ["블랙", "카키", "브라운"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 446,
+    "created_at": "2026-08-26 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 12,
+    "category_id": 15,
+    "name": "라이트 더비 슈즈 162",
+    "price": 109000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "라이트 더비 슈즈 162은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "천연가죽 혼방",
+      "color": ["블랙", "화이트", "그레이"],
+      "size": ["260", "270", "280"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 483,
+    "created_at": "2026-09-27 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 13,
+    "category_id": 16,
+    "name": "라이트 레더 벨트 163",
+    "price": 69000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "라이트 레더 벨트 163은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["블랙", "실버", "네이비"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 19,
+    "created_at": "2026-01-01 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 14,
+    "category_id": 17,
+    "name": "라이트 러닝 쇼츠 164",
+    "price": 89000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "라이트 러닝 쇼츠 164은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "흡습속건 폴리에스터",
+      "color": ["블랙", "그레이", "블루"],
+      "size": ["M", "L", "XL"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 56,
+    "created_at": "2026-02-02 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 15,
+    "category_id": 19,
+    "name": "라이트 세라마이드 크림 165",
+    "price": 64000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "라이트 세라마이드 크림 165은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "모든 피부용",
+      "material": "피부 저자극 포뮬러",
+      "color": ["기본"],
+      "size": ["50ml", "100ml", "200ml"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 93,
+    "created_at": "2026-03-03 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 16,
+    "category_id": 20,
+    "name": "라이트 글로우 쿠션 166",
+    "price": 22000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "라이트 글로우 쿠션 166은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 메이크업",
+      "material": "고밀착 컬러 포뮬러",
+      "color": ["코랄", "로즈", "누드"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 130,
+    "created_at": "2026-04-04 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 17,
+    "category_id": 21,
+    "name": "라이트 단백질 샴푸 167",
+    "price": 36000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "라이트 단백질 샴푸 167은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "손상 모발용",
+      "material": "식물 유래 헤어 포뮬러",
+      "color": ["기본"],
+      "size": ["100ml", "300ml", "500ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 167,
+    "created_at": "2026-05-05 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 18,
+    "category_id": 22,
+    "name": "라이트 퍼퓸 바디워시 168",
+    "price": 39000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "라이트 퍼퓸 바디워시 168은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 케어",
+      "material": "보습 바디 포뮬러",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["50ml", "300ml"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 204,
+    "created_at": "2026-06-06 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 19,
+    "category_id": 23,
+    "name": "라이트 오 드 퍼퓸 169",
+    "price": 99000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "라이트 오 드 퍼퓸 169은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "유니섹스",
+      "material": "프리미엄 향료",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["30ml", "50ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 241,
+    "created_at": "2026-07-07 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 20,
+    "category_id": 24,
+    "name": "라이트 LED 마스크 170",
+    "price": 159000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "라이트 LED 마스크 170은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "홈 뷰티 케어",
+      "material": "ABS 및 실리콘",
+      "color": ["화이트", "핑크", "블랙"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 278,
+    "created_at": "2026-08-08 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 21,
+    "category_id": 25,
+    "name": "라이트 코튼 우주복 171",
+    "price": 29000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "라이트 코튼 우주복 171은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "베이비 컴포트핏",
+      "material": "오가닉 코튼",
+      "color": ["크림", "베이지", "민트"],
+      "size": ["6M", "12M", "18M"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 315,
+    "created_at": "2026-09-09 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 22,
+    "category_id": 26,
+    "name": "라이트 윈드브레이커 172",
+    "price": 49000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "라이트 윈드브레이커 172은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 레귤러핏",
+      "material": "부드러운 코튼 혼방",
+      "color": ["아이보리", "블루", "옐로우"],
+      "size": ["110", "120", "130"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 352,
+    "created_at": "2026-01-10 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 23,
+    "category_id": 27,
+    "name": "라이트 레인 부츠 173",
+    "price": 69000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "라이트 레인 부츠 173은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 정사이즈",
+      "material": "경량 합성 소재",
+      "color": ["화이트", "핑크", "블루"],
+      "size": ["170", "180", "190"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 389,
+    "created_at": "2026-02-11 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 24,
+    "category_id": 28,
+    "name": "라이트 버킷햇 174",
+    "price": 55000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "라이트 버킷햇 174은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 프리 사이즈",
+      "material": "코튼 및 폴리에스터",
+      "color": ["베이지", "민트", "라벤더"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 426,
+    "created_at": "2026-03-12 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 25,
+    "category_id": 29,
+    "name": "라이트 역할놀이 키트 175",
+    "price": 75000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "라이트 역할놀이 키트 175은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "36개월 이상",
+      "material": "안전 인증 소재",
+      "color": ["멀티"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 463,
+    "created_at": "2026-04-13 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 26,
+    "category_id": 30,
+    "name": "라이트 실리콘 이유식기 176",
+    "price": 45000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "라이트 실리콘 이유식기 176은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "육아 편의 설계",
+      "material": "유아 안전 인증 소재",
+      "color": ["크림", "그레이", "민트"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 500,
+    "created_at": "2026-05-14 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 27,
+    "category_id": 6,
+    "name": "소프트 블라우스 177",
+    "price": 69000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "소프트 블라우스 177은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
+      "size": ["S", "M", "L"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 36,
+    "created_at": "2026-06-15 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 28,
+    "category_id": 7,
+    "name": "소프트 크로스백 178",
+    "price": 99000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "소프트 크로스백 178은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 73,
+    "created_at": "2026-07-16 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 29,
+    "category_id": 8,
+    "name": "소프트 메리제인 179",
+    "price": 119000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "소프트 메리제인 179은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "합성가죽",
+      "color": ["블랙", "오프화이트", "브라운"],
+      "size": ["230", "240", "250"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 110,
+    "created_at": "2026-08-17 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 30,
+    "category_id": 9,
+    "name": "소프트 울 머플러 180",
+    "price": 79000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "소프트 울 머플러 180은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["실버", "블랙", "베이지"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 147,
+    "created_at": "2026-09-18 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 31,
+    "category_id": 10,
+    "name": "소프트 트레이닝 탑 181",
+    "price": 69000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "소프트 트레이닝 탑 181은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "기능성 폴리에스터",
+      "color": ["블랙", "네이비", "라벤더"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 184,
+    "created_at": "2026-01-19 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 32,
+    "category_id": 13,
+    "name": "소프트 울 니트 182",
+    "price": 79000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "소프트 울 니트 182은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "레귤러핏",
+      "material": "프리미엄 코튼 혼방",
+      "color": ["화이트", "차콜", "네이비"],
+      "size": ["M", "L", "XL"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 221,
+    "created_at": "2026-02-20 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 33,
+    "category_id": 14,
+    "name": "소프트 토트백 183",
+    "price": 109000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "소프트 토트백 183은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "나일론 혼방",
+      "color": ["블랙", "카키", "브라운"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 258,
+    "created_at": "2026-03-21 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 34,
+    "category_id": 15,
+    "name": "소프트 첼시 부츠 184",
+    "price": 129000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "소프트 첼시 부츠 184은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "정사이즈",
+      "material": "천연가죽 혼방",
+      "color": ["블랙", "화이트", "그레이"],
+      "size": ["260", "270", "280"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 295,
+    "created_at": "2026-04-22 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 35,
+    "category_id": 16,
+    "name": "소프트 울 머플러 185",
+    "price": 89000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "소프트 울 머플러 185은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "프리 사이즈",
+      "material": "복합 소재",
+      "color": ["블랙", "실버", "네이비"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 332,
+    "created_at": "2026-05-23 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 36,
+    "category_id": 17,
+    "name": "소프트 컴프레션 탑 186",
+    "price": 59000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "소프트 컴프레션 탑 186은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "액티브핏",
+      "material": "흡습속건 폴리에스터",
+      "color": ["블랙", "그레이", "블루"],
+      "size": ["M", "L", "XL"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 369,
+    "created_at": "2026-06-24 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 37,
+    "category_id": 19,
+    "name": "소프트 클렌징 오일 187",
+    "price": 34000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "소프트 클렌징 오일 187은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "모든 피부용",
+      "material": "피부 저자극 포뮬러",
+      "color": ["기본"],
+      "size": ["50ml", "100ml", "200ml"],
+      "origin": "대한민국"
+    },
+    "status": "SOLD_OUT",
+    "like_count": 406,
+    "created_at": "2026-07-25 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 38,
+    "category_id": 20,
+    "name": "소프트 크림 블러셔 188",
+    "price": 42000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "소프트 크림 블러셔 188은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 메이크업",
+      "material": "고밀착 컬러 포뮬러",
+      "color": ["코랄", "로즈", "누드"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 443,
+    "created_at": "2026-08-26 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 39,
+    "category_id": 21,
+    "name": "소프트 두피 토닉 189",
+    "price": 56000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "소프트 두피 토닉 189은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "손상 모발용",
+      "material": "식물 유래 헤어 포뮬러",
+      "color": ["기본"],
+      "size": ["100ml", "300ml", "500ml"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 480,
+    "created_at": "2026-09-27 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 40,
+    "category_id": 22,
+    "name": "소프트 바디 스크럽 190",
+    "price": 59000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "소프트 바디 스크럽 190은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 케어",
+      "material": "보습 바디 포뮬러",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["50ml", "300ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 16,
+    "created_at": "2026-01-01 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
+  },
+  {
+    "brand_id": 41,
+    "category_id": 23,
+    "name": "소프트 헤어 퍼퓸 191",
+    "price": 69000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "소프트 헤어 퍼퓸 191은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "유니섹스",
+      "material": "프리미엄 향료",
+      "color": ["시트러스", "플로럴", "우디"],
+      "size": ["30ml", "50ml"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 53,
+    "created_at": "2026-02-02 10:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-01.png"
+  },
+  {
+    "brand_id": 42,
+    "category_id": 24,
+    "name": "소프트 미니 고데기 192",
+    "price": 129000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "소프트 미니 고데기 192은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "홈 뷰티 케어",
+      "material": "ABS 및 실리콘",
+      "color": ["화이트", "핑크", "블랙"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 90,
+    "created_at": "2026-03-03 11:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-02.png"
+  },
+  {
+    "brand_id": 43,
+    "category_id": 25,
+    "name": "소프트 니트 보닛 193",
+    "price": 49000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "소프트 니트 보닛 193은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "베이비 컴포트핏",
+      "material": "오가닉 코튼",
+      "color": ["크림", "베이지", "민트"],
+      "size": ["6M", "12M", "18M"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 127,
+    "created_at": "2026-04-04 12:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-03.png"
+  },
+  {
+    "brand_id": 44,
+    "category_id": 26,
+    "name": "소프트 플레어 원피스 194",
+    "price": 69000,
+    "discount_rate": 25,
+    "description": {
+      "summary": "소프트 플레어 원피스 194은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 레귤러핏",
+      "material": "부드러운 코튼 혼방",
+      "color": ["아이보리", "블루", "옐로우"],
+      "size": ["110", "120", "130"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 164,
+    "created_at": "2026-05-05 13:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-04.png"
+  },
+  {
+    "brand_id": 45,
+    "category_id": 27,
+    "name": "소프트 퍼 슬립온 195",
+    "price": 89000,
+    "discount_rate": 30,
+    "description": {
+      "summary": "소프트 퍼 슬립온 195은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 정사이즈",
+      "material": "경량 합성 소재",
+      "color": ["화이트", "핑크", "블루"],
+      "size": ["170", "180", "190"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 201,
+    "created_at": "2026-06-06 14:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-05.png"
+  },
+  {
+    "brand_id": 46,
+    "category_id": 28,
+    "name": "소프트 보온 머플러 196",
+    "price": 25000,
+    "discount_rate": 0,
+    "description": {
+      "summary": "소프트 보온 머플러 196은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "키즈 프리 사이즈",
+      "material": "코튼 및 폴리에스터",
+      "color": ["베이지", "민트", "라벤더"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 238,
+    "created_at": "2026-07-07 15:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-06.png"
+  },
+  {
+    "brand_id": 47,
+    "category_id": 29,
+    "name": "소프트 촉감 인형 197",
+    "price": 45000,
+    "discount_rate": 5,
+    "description": {
+      "summary": "소프트 촉감 인형 197은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "36개월 이상",
+      "material": "안전 인증 소재",
+      "color": ["멀티"],
+      "size": ["ONE"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 275,
+    "created_at": "2026-08-08 16:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-07.png"
+  },
+  {
+    "brand_id": 48,
+    "category_id": 30,
+    "name": "소프트 수유 쿠션 198",
+    "price": 65000,
+    "discount_rate": 10,
+    "description": {
+      "summary": "소프트 수유 쿠션 198은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "육아 편의 설계",
+      "material": "유아 안전 인증 소재",
+      "color": ["크림", "그레이", "민트"],
+      "size": ["ONE"],
+      "origin": "베트남"
+    },
+    "status": "ACTIVE",
+    "like_count": 312,
+    "created_at": "2026-09-09 17:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-08.png"
+  },
+  {
+    "brand_id": 49,
+    "category_id": 6,
+    "name": "어반 카디건 199",
+    "price": 89000,
+    "discount_rate": 15,
+    "description": {
+      "summary": "어반 카디건 199은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "세미 오버핏",
+      "material": "코튼 혼방",
+      "color": ["아이보리", "블랙", "스카이블루"],
+      "size": ["S", "M", "L"],
+      "origin": "대한민국"
+    },
+    "status": "ACTIVE",
+    "like_count": 349,
+    "created_at": "2026-01-10 18:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-09.png"
+  },
+  {
+    "brand_id": 50,
+    "category_id": 7,
+    "name": "어반 미니백 200",
+    "price": 119000,
+    "discount_rate": 20,
+    "description": {
+      "summary": "어반 미니백 200은(는) 실용성과 완성도를 균형 있게 담아 일상에서 편하게 사용할 수 있는 제품입니다.",
+      "fit": "데일리 사이즈",
+      "material": "비건 레더",
+      "color": ["블랙", "탄", "크림"],
+      "size": ["ONE"],
+      "origin": "중국"
+    },
+    "status": "ACTIVE",
+    "like_count": 386,
+    "created_at": "2026-02-11 09:00:00",
+    "thumbnail_url": "/assets/placeholders/placeholder-10.png"
   }
 ]

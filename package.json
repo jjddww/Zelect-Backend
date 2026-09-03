@@ -12,6 +12,8 @@
   },
   "scripts": {
     "db:seed": "tsx src/database/seed.ts",
+    "db:seed:products": "tsx src/database/seed-products.ts",
+    "db:generate:products": "tsx src/database/generate-product-seed.ts",
     "dev": "tsx watch src/server.ts",
     "format": "prettier --write ."
   },
