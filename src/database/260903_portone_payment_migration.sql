@@ -117,6 +117,34 @@ PREPARE add_payments_status_index_statement FROM @add_payments_status_index_sql;
 EXECUTE add_payments_status_index_statement;
 DEALLOCATE PREPARE add_payments_status_index_statement;
 
+-- 주문 생성 시 재고를 먼저 확보하고 결제 승인 또는 만료까지 상태를 추적한다.
+CREATE TABLE IF NOT EXISTS inventory_reservations (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    order_id BIGINT UNSIGNED NOT NULL,
+    order_item_id BIGINT UNSIGNED NOT NULL,
+    product_option_id BIGINT UNSIGNED NOT NULL,
+    quantity SMALLINT UNSIGNED NOT NULL,
+    status ENUM('RESERVED', 'CONFIRMING', 'CONFIRMED', 'RELEASED')
+        NOT NULL DEFAULT 'RESERVED',
+    expires_at DATETIME NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+    CONSTRAINT uq_inventory_reservations_order_item UNIQUE (order_item_id),
+    CONSTRAINT fk_inventory_reservations_order
+        FOREIGN KEY (order_id) REFERENCES orders(id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_inventory_reservations_order_item
+        FOREIGN KEY (order_item_id) REFERENCES order_items(id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_inventory_reservations_product_option
+        FOREIGN KEY (product_option_id) REFERENCES product_options(id)
+        ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT chk_inventory_reservations_quantity CHECK (quantity > 0),
+    INDEX idx_inventory_reservations_expiry (status, expires_at),
+    INDEX idx_inventory_reservations_order (order_id, status)
+);
+
 -- 상품 단위 부분 취소 요청과 재고 복구의 멱등성을 보장한다.
 CREATE TABLE IF NOT EXISTS payment_cancellations (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,

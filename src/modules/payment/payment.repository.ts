@@ -22,12 +22,110 @@ interface OrderStockItemRow extends RowDataPacket {
   quantity: number;
 }
 
+interface ReservationRow extends RowDataPacket {
+  id: number;
+  order_id: number;
+  product_option_id: number;
+  quantity: number;
+  status: 'RESERVED' | 'CONFIRMING' | 'CONFIRMED' | 'RELEASED';
+  expires_at: Date;
+}
+
+export type PrepareManualConfirmationResult =
+  | { status: 'READY'; amount: number }
+  | { status: 'ALREADY_PAID'; orderId: number }
+  | { status: 'NOT_FOUND' | 'EXPIRED' | 'IN_PROGRESS' };
+
+export const prepareManualConfirmation = async (
+  userId: number,
+  paymentId: string,
+): Promise<PrepareManualConfirmationResult> => {
+  const connection = await pool.getConnection();
+  try {
+    await connection.beginTransaction();
+    const payment = await lockPaymentOrder(connection, paymentId);
+    if (!payment || payment.user_id !== userId) {
+      await connection.rollback();
+      return { status: 'NOT_FOUND' };
+    }
+    if (payment.payment_status === 'PAID' || payment.payment_status === 'PARTIALLY_CANCELED') {
+      await connection.commit();
+      return { status: 'ALREADY_PAID', orderId: payment.order_id };
+    }
+    const [reservations] = await connection.query<ReservationRow[]>(
+      `SELECT id, order_id, product_option_id, quantity, status, expires_at
+       FROM inventory_reservations
+       WHERE order_id = ? ORDER BY product_option_id, id FOR UPDATE`,
+      [payment.order_id],
+    );
+    if (reservations.length === 0) {
+      await connection.rollback();
+      return { status: 'NOT_FOUND' };
+    }
+    if (reservations.some((reservation) => reservation.status === 'CONFIRMING')) {
+      await connection.commit();
+      return { status: 'IN_PROGRESS' };
+    }
+    const expired = reservations.some(
+      (reservation) =>
+        reservation.status === 'RELEASED' || reservation.expires_at.getTime() <= Date.now(),
+    );
+    if (expired) {
+      for (const reservation of reservations) {
+        if (reservation.status !== 'RESERVED') continue;
+        await connection.execute(
+          `UPDATE product_options
+           SET stock_quantity = stock_quantity + ?,
+               status = IF(status = 'SOLD_OUT', 'ACTIVE', status)
+           WHERE id = ?`,
+          [reservation.quantity, reservation.product_option_id],
+        );
+      }
+      await connection.execute(
+        `UPDATE inventory_reservations SET status = 'RELEASED'
+         WHERE order_id = ? AND status = 'RESERVED'`,
+        [payment.order_id],
+      );
+      await connection.execute(`UPDATE payments SET status = 'FAILED' WHERE payment_id = ?`, [
+        paymentId,
+      ]);
+      await connection.execute(`UPDATE orders SET status = 'CANCELED' WHERE id = ?`, [
+        payment.order_id,
+      ]);
+      await connection.commit();
+      return { status: 'EXPIRED' };
+    }
+    if (reservations.some((reservation) => reservation.status !== 'RESERVED')) {
+      await connection.rollback();
+      return { status: 'NOT_FOUND' };
+    }
+    await connection.execute(
+      `UPDATE inventory_reservations SET status = 'CONFIRMING'
+       WHERE order_id = ? AND status = 'RESERVED'`,
+      [payment.order_id],
+    );
+    await connection.commit();
+    return { status: 'READY', amount: payment.amount };
+  } catch (error) {
+    await connection.rollback();
+    throw error;
+  } finally {
+    connection.release();
+  }
+};
+
+export const resetManualConfirmation = async (paymentId: string): Promise<void> => {
+  await pool.execute(
+    `UPDATE inventory_reservations AS ir
+     INNER JOIN payments AS p ON p.order_id = ir.order_id
+     SET ir.status = 'RESERVED'
+     WHERE p.payment_id = ? AND ir.status = 'CONFIRMING'`,
+    [paymentId],
+  );
+};
+
 export type CompletePaymentResult =
-  | 'COMPLETED'
-  | 'ALREADY_PAID'
-  | 'NOT_FOUND'
-  | 'OUT_OF_STOCK'
-  | 'CANCELED';
+  'COMPLETED' | 'ALREADY_PAID' | 'NOT_FOUND' | 'OUT_OF_STOCK' | 'CANCELED';
 
 export type SyncPaymentResult = 'UPDATED' | 'UNCHANGED' | 'NOT_FOUND';
 
@@ -130,6 +228,13 @@ export const applyPaid = async (
       return 'CANCELED';
     }
 
+    const [reservations] = await connection.query<ReservationRow[]>(
+      `SELECT id, order_id, product_option_id, quantity, status, expires_at
+       FROM inventory_reservations
+       WHERE order_id = ? ORDER BY product_option_id, id FOR UPDATE`,
+      [payment.order_id],
+    );
+
     const [items] = await connection.query<OrderStockItemRow[]>(
       `
         SELECT
@@ -150,9 +255,21 @@ export const applyPaid = async (
       return 'OUT_OF_STOCK';
     }
 
-    for (const item of items) {
-      const [result] = await connection.execute<ResultSetHeader>(
-        `
+    if (reservations.length > 0) {
+      if (reservations.some((reservation) => reservation.status === 'RELEASED')) {
+        await connection.rollback();
+        return 'OUT_OF_STOCK';
+      }
+      await connection.execute(
+        `UPDATE inventory_reservations SET status = 'CONFIRMED'
+         WHERE order_id = ? AND status IN ('RESERVED', 'CONFIRMING')`,
+        [payment.order_id],
+      );
+    } else {
+      // 마이그레이션 이전에 생성된 주문만 기존 방식으로 결제 완료 시 재고를 차감한다.
+      for (const item of items) {
+        const [result] = await connection.execute<ResultSetHeader>(
+          `
             UPDATE product_options
             SET
               stock_quantity = stock_quantity - ?,
@@ -165,12 +282,13 @@ export const applyPaid = async (
               AND status = 'ACTIVE'
               AND stock_quantity >= ?
           `,
-        [item.quantity, item.quantity, item.product_option_id, item.quantity],
-      );
+          [item.quantity, item.quantity, item.product_option_id, item.quantity],
+        );
 
-      if (result.affectedRows !== 1) {
-        await connection.rollback();
-        return 'OUT_OF_STOCK';
+        if (result.affectedRows !== 1) {
+          await connection.rollback();
+          return 'OUT_OF_STOCK';
+        }
       }
     }
 
@@ -233,9 +351,35 @@ export const applyFailed = async (
       await connection.commit();
       return 'UNCHANGED';
     }
+    const [reservations] = await connection.query<ReservationRow[]>(
+      `SELECT id, order_id, product_option_id, quantity, status, expires_at
+       FROM inventory_reservations
+       WHERE order_id = ? ORDER BY product_option_id, id FOR UPDATE`,
+      [payment.order_id],
+    );
+    for (const reservation of reservations) {
+      if (reservation.status !== 'RESERVED' && reservation.status !== 'CONFIRMING') continue;
+      await connection.execute(
+        `UPDATE product_options
+         SET stock_quantity = stock_quantity + ?,
+             status = IF(status = 'SOLD_OUT', 'ACTIVE', status)
+         WHERE id = ?`,
+        [reservation.quantity, reservation.product_option_id],
+      );
+    }
+    await connection.execute(
+      `UPDATE inventory_reservations SET status = 'RELEASED'
+       WHERE order_id = ? AND status IN ('RESERVED', 'CONFIRMING')`,
+      [payment.order_id],
+    );
     await connection.execute(
       `UPDATE payments SET status = 'FAILED', transaction_id = ? WHERE payment_id = ?`,
       [transactionId, paymentId],
+    );
+    await connection.execute(
+      `UPDATE orders SET status = 'CANCELED'
+       WHERE id = ? AND status = 'PENDING_PAYMENT'`,
+      [payment.order_id],
     );
     await connection.commit();
     return payment.payment_status === 'FAILED' ? 'UNCHANGED' : 'UPDATED';
@@ -265,8 +409,7 @@ export const applyPartialCancellation = async (
       return 'UNCHANGED';
     }
     const unchanged =
-      payment.payment_status === 'PARTIALLY_CANCELED' &&
-      payment.canceled_amount === canceledAmount;
+      payment.payment_status === 'PARTIALLY_CANCELED' && payment.canceled_amount === canceledAmount;
     await connection.execute(
       `UPDATE payments
        SET status = 'PARTIALLY_CANCELED', transaction_id = ?, canceled_amount = ?
@@ -350,6 +493,11 @@ export interface PrepareCancellationInput {
   items: Array<{ orderItemId: number; quantity: number }>;
 }
 
+export interface PrepareFullCancellationInput {
+  requestId: string;
+  reason: string;
+}
+
 export type PrepareCancellationResult =
   | {
       status: 'READY';
@@ -360,6 +508,160 @@ export type PrepareCancellationResult =
     }
   | { status: 'EXISTING'; cancellation: CancellationRow }
   | { status: 'NOT_FOUND' | 'NOT_CANCELLABLE' | 'INVALID_QUANTITY' };
+
+export type PrepareFullCancellationResult =
+  | {
+      status: 'READY';
+      cancellationId: number;
+      amount: number;
+      currentCancellableAmount: number;
+      reason: string;
+    }
+  | { status: 'CANCELED_BEFORE_PAYMENT'; amount: number }
+  | { status: 'EXISTING'; cancellation: CancellationRow }
+  | { status: 'NOT_FOUND' | 'NOT_CANCELLABLE' };
+
+export const prepareFullCancellation = async (
+  userId: number,
+  paymentId: string,
+  input: PrepareFullCancellationInput,
+): Promise<PrepareFullCancellationResult> => {
+  const connection = await pool.getConnection();
+  try {
+    await connection.beginTransaction();
+    const payment = await lockPaymentOrder(connection, paymentId);
+    if (!payment || payment.user_id !== userId) {
+      await connection.rollback();
+      return { status: 'NOT_FOUND' };
+    }
+
+    const [existingRows] = await connection.query<CancellationRow[]>(
+      `SELECT * FROM payment_cancellations
+       WHERE payment_id = ? AND request_id = ? FOR UPDATE`,
+      [paymentId, input.requestId],
+    );
+    if (existingRows[0]) {
+      await connection.commit();
+      return { status: 'EXISTING', cancellation: existingRows[0] };
+    }
+
+    if (payment.payment_status === 'PENDING_PAYMENT') {
+      const [reservations] = await connection.query<ReservationRow[]>(
+        `SELECT id, order_id, product_option_id, quantity, status, expires_at
+         FROM inventory_reservations
+         WHERE order_id = ? ORDER BY product_option_id, id FOR UPDATE`,
+        [payment.order_id],
+      );
+      if (reservations.some((reservation) => reservation.status === 'CONFIRMING')) {
+        await connection.rollback();
+        return { status: 'NOT_CANCELLABLE' };
+      }
+      for (const reservation of reservations) {
+        if (reservation.status !== 'RESERVED') continue;
+        await connection.execute(
+          `UPDATE product_options
+           SET stock_quantity = stock_quantity + ?,
+               status = IF(status = 'SOLD_OUT', 'ACTIVE', status)
+           WHERE id = ?`,
+          [reservation.quantity, reservation.product_option_id],
+        );
+      }
+      await connection.execute(
+        `UPDATE inventory_reservations SET status = 'RELEASED'
+         WHERE order_id = ? AND status = 'RESERVED'`,
+        [payment.order_id],
+      );
+      await connection.execute(
+        `INSERT INTO payment_cancellations
+           (payment_id, request_id, status, amount, reason, stock_restored)
+         VALUES (?, ?, 'SUCCEEDED', ?, ?, TRUE)`,
+        [paymentId, input.requestId, payment.amount, input.reason],
+      );
+      await connection.execute(
+        `UPDATE payments SET status = 'CANCELED', canceled_amount = amount
+         WHERE payment_id = ?`,
+        [paymentId],
+      );
+      await connection.execute(`UPDATE orders SET status = 'CANCELED' WHERE id = ?`, [
+        payment.order_id,
+      ]);
+      await connection.commit();
+      return { status: 'CANCELED_BEFORE_PAYMENT', amount: payment.amount };
+    }
+
+    if (
+      (payment.payment_status !== 'PAID' && payment.payment_status !== 'PARTIALLY_CANCELED') ||
+      payment.order_status !== 'ORDERED'
+    ) {
+      await connection.rollback();
+      return { status: 'NOT_CANCELLABLE' };
+    }
+
+    const [pendingCancellations] = await connection.query<CancellationRow[]>(
+      `SELECT * FROM payment_cancellations
+       WHERE payment_id = ? AND status = 'REQUESTED' LIMIT 1 FOR UPDATE`,
+      [paymentId],
+    );
+    if (pendingCancellations.length > 0) {
+      await connection.rollback();
+      return { status: 'NOT_CANCELLABLE' };
+    }
+
+    const [items] = await connection.query<CancellableOrderItemRow[]>(
+      `SELECT oi.id, oi.product_option_id, oi.unit_price, oi.quantity,
+              COALESCE(SUM(CASE WHEN pc.status = 'SUCCEEDED' THEN pci.quantity ELSE 0 END), 0)
+                AS canceled_quantity
+       FROM order_items AS oi
+       LEFT JOIN payment_cancellation_items AS pci ON pci.order_item_id = oi.id
+       LEFT JOIN payment_cancellations AS pc ON pc.id = pci.cancellation_id
+       WHERE oi.order_id = ?
+       GROUP BY oi.id
+       ORDER BY oi.id
+       FOR UPDATE`,
+      [payment.order_id],
+    );
+    const remainingItems = items
+      .map((item) => ({
+        id: item.id,
+        quantity: item.quantity - Number(item.canceled_quantity),
+        unitPrice: item.unit_price,
+      }))
+      .filter((item) => item.quantity > 0);
+    const currentCancellableAmount = payment.amount - payment.canceled_amount;
+    if (remainingItems.length === 0 || currentCancellableAmount <= 0) {
+      await connection.rollback();
+      return { status: 'NOT_CANCELLABLE' };
+    }
+
+    const [result] = await connection.execute<ResultSetHeader>(
+      `INSERT INTO payment_cancellations
+         (payment_id, request_id, status, amount, reason)
+       VALUES (?, ?, 'REQUESTED', ?, ?)`,
+      [paymentId, input.requestId, currentCancellableAmount, input.reason],
+    );
+    for (const item of remainingItems) {
+      await connection.execute(
+        `INSERT INTO payment_cancellation_items
+           (cancellation_id, order_item_id, quantity, amount)
+         VALUES (?, ?, ?, ?)`,
+        [result.insertId, item.id, item.quantity, item.unitPrice * item.quantity],
+      );
+    }
+    await connection.commit();
+    return {
+      status: 'READY',
+      cancellationId: result.insertId,
+      amount: currentCancellableAmount,
+      currentCancellableAmount,
+      reason: input.reason,
+    };
+  } catch (error) {
+    await connection.rollback();
+    throw error;
+  } finally {
+    connection.release();
+  }
+};
 
 export const prepareItemCancellation = async (
   userId: number,

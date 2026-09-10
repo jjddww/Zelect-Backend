@@ -27,6 +27,29 @@ export const getPortOnePayment = async (paymentId: string) => {
   }
 };
 
+export const confirmPortOnePayment = async (
+  paymentId: string,
+  paymentToken: string,
+  totalAmount: number,
+  currency: 'KRW',
+  txId?: string,
+) => {
+  try {
+    return await getPaymentClient().confirmPayment({
+      paymentId,
+      paymentToken,
+      txId,
+      totalAmount,
+      currency,
+      storeId: getRequiredEnv('PORTONE_STORE_ID'),
+      isTest: process.env.PORTONE_IS_TEST !== 'false',
+    });
+  } catch (error) {
+    console.error('PortOne manual confirmation failed', error);
+    throw new AppError(502, '포트원 결제를 승인할 수 없습니다.');
+  }
+};
+
 export const cancelPortOnePayment = async (
   paymentId: string,
   amount: number,

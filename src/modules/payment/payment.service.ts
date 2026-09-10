@@ -1,7 +1,7 @@
 import * as PortOne from '@portone/server-sdk';
 import AppError from '../../common/exceptions/AppError';
 import * as paymentRepository from './payment.repository';
-import { cancelPortOnePayment, getPortOnePayment } from './portone.client';
+import { cancelPortOnePayment, confirmPortOnePayment, getPortOnePayment } from './portone.client';
 
 const synchronizePayment = async (paymentId: string, userId?: number) => {
   const localPayment = await paymentRepository.getPaymentOrder(paymentId, userId);
@@ -139,11 +139,119 @@ export const completePayment = async (userId: number, paymentId: string) => {
   return result;
 };
 
+export const confirmPayment = async (
+  userId: number,
+  paymentId: string,
+  paymentToken: string,
+  txId?: string,
+) => {
+  const prepared = await paymentRepository.prepareManualConfirmation(userId, paymentId);
+  if (prepared.status === 'NOT_FOUND') {
+    throw new AppError(404, '결제 정보를 찾을 수 없습니다.');
+  }
+  if (prepared.status === 'EXPIRED') {
+    throw new AppError(409, '재고 예약 시간이 만료되었습니다. 주문을 다시 생성해 주세요.');
+  }
+  if (prepared.status === 'IN_PROGRESS') {
+    const synchronized = await synchronizePayment(paymentId, userId);
+    if (synchronized.status === 'PAID') return synchronized;
+    throw new AppError(409, '이미 결제 승인 처리가 진행 중입니다. 잠시 후 다시 확인해 주세요.');
+  }
+  if (prepared.status === 'ALREADY_PAID') {
+    return {
+      paymentId,
+      orderId: prepared.orderId,
+      status: 'PAID' as const,
+      alreadyProcessed: true,
+    };
+  }
+  if (prepared.status !== 'READY') {
+    throw new AppError(409, '결제를 승인할 수 없는 상태입니다.');
+  }
+
+  try {
+    await confirmPortOnePayment(paymentId, paymentToken, prepared.amount, 'KRW', txId);
+  } catch (error) {
+    await paymentRepository.resetManualConfirmation(paymentId);
+    throw error;
+  }
+
+  const result = await synchronizePayment(paymentId, userId);
+  if (result.status !== 'PAID') {
+    throw new AppError(409, `결제가 승인되지 않았습니다. 현재 상태: ${result.status}`);
+  }
+  return result;
+};
+
 export interface CancelPaymentItemsInput {
   requestId: string;
   reason: string;
   items: Array<{ orderItemId: number; quantity: number }>;
 }
+
+export interface CancelEntirePaymentInput {
+  requestId: string;
+  reason: string;
+}
+
+export const cancelEntirePayment = async (
+  userId: number,
+  paymentId: string,
+  input: CancelEntirePaymentInput,
+) => {
+  const prepared = await paymentRepository.prepareFullCancellation(userId, paymentId, input);
+  if (prepared.status === 'NOT_FOUND') {
+    throw new AppError(404, '결제 정보를 찾을 수 없습니다.');
+  }
+  if (prepared.status === 'NOT_CANCELLABLE') {
+    throw new AppError(409, '현재 상태에서는 전체 취소할 수 없습니다.');
+  }
+  if (prepared.status === 'CANCELED_BEFORE_PAYMENT') {
+    return {
+      paymentId,
+      requestId: input.requestId,
+      status: 'CANCELED' as const,
+      amount: prepared.amount,
+      alreadyProcessed: false,
+    };
+  }
+  if (prepared.status === 'EXISTING') {
+    return {
+      paymentId,
+      requestId: prepared.cancellation.request_id,
+      status: prepared.cancellation.status,
+      amount: prepared.cancellation.amount,
+      alreadyProcessed: true,
+    };
+  }
+  if (prepared.status !== 'READY') {
+    throw new AppError(409, '전체 취소를 준비할 수 없습니다.');
+  }
+
+  const response = await cancelPortOnePayment(
+    paymentId,
+    prepared.amount,
+    prepared.currentCancellableAmount,
+    prepared.reason,
+  );
+  const cancellation = response.cancellation;
+  if (PortOne.Payment.isUnrecognizedPaymentCancellation(cancellation)) {
+    throw new AppError(502, '지원하지 않는 포트원 취소 응답입니다.');
+  }
+  await paymentRepository.recordCancellationResult(
+    prepared.cancellationId,
+    cancellation.id,
+    cancellation.status,
+  );
+  return {
+    paymentId,
+    requestId: input.requestId,
+    cancellationId: cancellation.id,
+    status: cancellation.status,
+    amount: cancellation.totalAmount,
+    alreadyProcessed: false,
+  };
+};
 
 export const cancelPaymentItems = async (
   userId: number,

@@ -13,18 +13,27 @@ export interface CreateOrderInput {
   deliveryRequest?: string | null;
 }
 
+export const cleanupExpiredReservations = () => orderRepository.releaseExpiredReservations();
+
 export const createOrder = async (userId: number, input: CreateOrderInput) => {
+  await orderRepository.releaseExpiredReservations();
+
   const cartItemIds = [...new Set(input.cartItemIds)];
   const uniquePart = randomUUID().replaceAll('-', '').slice(0, 12);
   const createdAt = Date.now();
   const orderNumber = `ORD-${createdAt}-${uniquePart.slice(0, 6)}`;
   const paymentId = `payment-${uniquePart}-${createdAt}`;
+  const configuredMinutes = Number(process.env.PAYMENT_RESERVATION_MINUTES ?? 10);
+  const reservationMinutes =
+    Number.isInteger(configuredMinutes) && configuredMinutes > 0 ? configuredMinutes : 10;
+  const reservationExpiresAt = new Date(Date.now() + reservationMinutes * 60_000);
 
   const result = await orderRepository.createPendingOrder(
     userId,
     { ...input, cartItemIds },
     orderNumber,
     paymentId,
+    reservationExpiresAt,
   );
 
   if (result.status === 'CART_ITEM_NOT_FOUND') {
@@ -52,6 +61,7 @@ export const createOrder = async (userId: number, input: CreateOrderInput) => {
       orderName: 'Zelect 주문',
       totalAmount: result.totalPrice,
       currency: 'KRW',
+      reservationExpiresAt,
     },
   };
 };

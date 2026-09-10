@@ -26,6 +26,56 @@ interface CheckoutItemRow extends RowDataPacket {
   unit_price: number;
 }
 
+interface ExpiredReservationRow extends RowDataPacket {
+  id: number;
+  order_id: number;
+  product_option_id: number;
+  quantity: number;
+}
+
+export const releaseExpiredReservations = async (): Promise<void> => {
+  const connection = await pool.getConnection();
+  try {
+    await connection.beginTransaction();
+    const [reservations] = await connection.query<ExpiredReservationRow[]>(
+      `SELECT id, order_id, product_option_id, quantity
+       FROM inventory_reservations
+       WHERE status = 'RESERVED' AND expires_at <= NOW()
+       ORDER BY product_option_id, id
+       FOR UPDATE`,
+    );
+    for (const reservation of reservations) {
+      await connection.execute(
+        `UPDATE product_options
+         SET stock_quantity = stock_quantity + ?,
+             status = IF(status = 'SOLD_OUT', 'ACTIVE', status)
+         WHERE id = ?`,
+        [reservation.quantity, reservation.product_option_id],
+      );
+      await connection.execute(
+        `UPDATE inventory_reservations SET status = 'RELEASED' WHERE id = ?`,
+        [reservation.id],
+      );
+      await connection.execute(
+        `UPDATE payments SET status = 'FAILED'
+         WHERE order_id = ? AND status = 'PENDING_PAYMENT'`,
+        [reservation.order_id],
+      );
+      await connection.execute(
+        `UPDATE orders SET status = 'CANCELED'
+         WHERE id = ? AND status = 'PENDING_PAYMENT'`,
+        [reservation.order_id],
+      );
+    }
+    await connection.commit();
+  } catch (error) {
+    await connection.rollback();
+    throw error;
+  } finally {
+    connection.release();
+  }
+};
+
 export type CreateOrderResult =
   | {
       status: 'SUCCESS';
@@ -41,6 +91,7 @@ export const createPendingOrder = async (
   input: CreateOrderInput,
   orderNumber: string,
   paymentId: string,
+  reservationExpiresAt: Date,
 ): Promise<CreateOrderResult> => {
   const connection = await pool.getConnection();
   try {
@@ -103,7 +154,19 @@ export const createPendingOrder = async (
 
     const orderId = orderResult.insertId;
     for (const item of items) {
-      await connection.execute(
+      const [stockResult] = await connection.execute<ResultSetHeader>(
+        `UPDATE product_options
+         SET stock_quantity = stock_quantity - ?,
+             status = IF(stock_quantity - ? = 0, 'SOLD_OUT', status)
+         WHERE id = ? AND status = 'ACTIVE' AND stock_quantity >= ?`,
+        [item.quantity, item.quantity, item.product_option_id, item.quantity],
+      );
+      if (stockResult.affectedRows !== 1) {
+        await connection.rollback();
+        return { status: 'OUT_OF_STOCK' };
+      }
+
+      const [orderItemResult] = await connection.execute<ResultSetHeader>(
         `
           INSERT INTO order_items (
             order_id, source_cart_item_id, product_id, product_option_id, product_name,
@@ -122,6 +185,19 @@ export const createPendingOrder = async (
           item.unit_price,
           item.quantity,
           item.unit_price * item.quantity,
+        ],
+      );
+
+      await connection.execute(
+        `INSERT INTO inventory_reservations
+           (order_id, order_item_id, product_option_id, quantity, status, expires_at)
+         VALUES (?, ?, ?, ?, 'RESERVED', ?)`,
+        [
+          orderId,
+          orderItemResult.insertId,
+          item.product_option_id,
+          item.quantity,
+          reservationExpiresAt,
         ],
       );
     }
