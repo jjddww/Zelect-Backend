@@ -1,5 +1,60 @@
 import * as orderRepository from './order.repository';
 import AppError from '../../common/exceptions/AppError';
+import { randomUUID } from 'node:crypto';
+import { getPortOneClientConfig } from '../payment/portone.client';
+
+export interface CreateOrderInput {
+  cartItemIds: number[];
+  recipientName: string;
+  recipientPhone: string;
+  zipCode: string;
+  address: string;
+  addressDetail?: string | null;
+  deliveryRequest?: string | null;
+}
+
+export const createOrder = async (userId: number, input: CreateOrderInput) => {
+  const cartItemIds = [...new Set(input.cartItemIds)];
+  const uniquePart = randomUUID().replaceAll('-', '').slice(0, 12);
+  const createdAt = Date.now();
+  const orderNumber = `ORD-${createdAt}-${uniquePart.slice(0, 6)}`;
+  const paymentId = `payment-${uniquePart}-${createdAt}`;
+
+  const result = await orderRepository.createPendingOrder(
+    userId,
+    { ...input, cartItemIds },
+    orderNumber,
+    paymentId,
+  );
+
+  if (result.status === 'CART_ITEM_NOT_FOUND') {
+    throw new AppError(404, '장바구니 항목을 찾을 수 없습니다.');
+  }
+  if (result.status === 'NOT_AVAILABLE') {
+    throw new AppError(409, '현재 주문할 수 없는 상품이 포함되어 있습니다.');
+  }
+  if (result.status === 'OUT_OF_STOCK') {
+    throw new AppError(409, '재고가 부족한 상품이 포함되어 있습니다.');
+  }
+  if (result.status !== 'SUCCESS') {
+    throw new AppError(500, '주문 생성에 실패했습니다.');
+  }
+
+  const portOneConfig = getPortOneClientConfig();
+  return {
+    orderId: result.orderId,
+    orderNumber: result.orderNumber,
+    status: 'PENDING_PAYMENT',
+    payment: {
+      paymentId: result.paymentId,
+      storeId: portOneConfig.storeId,
+      channelKey: portOneConfig.channelKey,
+      orderName: 'Zelect 주문',
+      totalAmount: result.totalPrice,
+      currency: 'KRW',
+    },
+  };
+};
 
 export const getMyOrders = async (userId: number, page: number, size: number) => {
   const offset = (page - 1) * size;

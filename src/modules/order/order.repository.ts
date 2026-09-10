@@ -1,10 +1,151 @@
-import { RowDataPacket } from 'mysql2';
+import { ResultSetHeader, RowDataPacket } from 'mysql2';
 import pool from '../../database/mysql';
+
+export interface CreateOrderInput {
+  cartItemIds: number[];
+  recipientName: string;
+  recipientPhone: string;
+  zipCode: string;
+  address: string;
+  addressDetail?: string | null;
+  deliveryRequest?: string | null;
+}
+
+interface CheckoutItemRow extends RowDataPacket {
+  cart_item_id: number;
+  product_option_id: number;
+  quantity: number;
+  stock_quantity: number;
+  option_status: 'ACTIVE' | 'SOLD_OUT' | 'HIDDEN';
+  product_status: 'ACTIVE' | 'SOLD_OUT' | 'HIDDEN';
+  product_id: number;
+  product_name: string;
+  thumbnail_url: string | null;
+  color: string;
+  size: string;
+  unit_price: number;
+}
+
+export type CreateOrderResult =
+  | {
+      status: 'SUCCESS';
+      orderId: number;
+      orderNumber: string;
+      paymentId: string;
+      totalPrice: number;
+    }
+  | { status: 'CART_ITEM_NOT_FOUND' | 'NOT_AVAILABLE' | 'OUT_OF_STOCK' };
+
+export const createPendingOrder = async (
+  userId: number,
+  input: CreateOrderInput,
+  orderNumber: string,
+  paymentId: string,
+): Promise<CreateOrderResult> => {
+  const connection = await pool.getConnection();
+  try {
+    await connection.beginTransaction();
+    const placeholders = input.cartItemIds.map(() => '?').join(', ');
+    const [items] = await connection.query<CheckoutItemRow[]>(
+      `
+        SELECT ci.id AS cart_item_id, ci.product_option_id, ci.quantity,
+               po.stock_quantity, po.status AS option_status,
+               p.status AS product_status, p.id AS product_id, p.name AS product_name,
+               p.thumbnail_url, po.color, po.size,
+               FLOOR(p.price * (1 - p.discount_rate / 100)) + po.additional_price AS unit_price
+        FROM cart_items AS ci
+        INNER JOIN product_options AS po ON po.id = ci.product_option_id
+        INNER JOIN products AS p ON p.id = po.product_id
+        WHERE ci.user_id = ? AND ci.id IN (${placeholders})
+        ORDER BY ci.id
+        FOR UPDATE
+      `,
+      [userId, ...input.cartItemIds],
+    );
+
+    if (items.length !== input.cartItemIds.length) {
+      await connection.rollback();
+      return { status: 'CART_ITEM_NOT_FOUND' };
+    }
+    if (items.some((item) => item.option_status !== 'ACTIVE' || item.product_status !== 'ACTIVE')) {
+      await connection.rollback();
+      return { status: 'NOT_AVAILABLE' };
+    }
+    if (items.some((item) => item.quantity > item.stock_quantity)) {
+      await connection.rollback();
+      return { status: 'OUT_OF_STOCK' };
+    }
+
+    const itemsPrice = items.reduce((sum, item) => sum + item.unit_price * item.quantity, 0);
+    const deliveryFee = 0;
+    const totalPrice = itemsPrice + deliveryFee;
+    const [orderResult] = await connection.execute<ResultSetHeader>(
+      `
+        INSERT INTO orders (
+          user_id, order_number, status, items_price, delivery_fee, total_price,
+          recipient_name, recipient_phone, zip_code, address, address_detail, delivery_request
+        ) VALUES (?, ?, 'PENDING_PAYMENT', ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      `,
+      [
+        userId,
+        orderNumber,
+        itemsPrice,
+        deliveryFee,
+        totalPrice,
+        input.recipientName,
+        input.recipientPhone,
+        input.zipCode,
+        input.address,
+        input.addressDetail ?? null,
+        input.deliveryRequest ?? null,
+      ],
+    );
+
+    const orderId = orderResult.insertId;
+    for (const item of items) {
+      await connection.execute(
+        `
+          INSERT INTO order_items (
+            order_id, source_cart_item_id, product_id, product_option_id, product_name,
+            thumbnail_url, color, size, unit_price, quantity, subtotal
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        `,
+        [
+          orderId,
+          item.cart_item_id,
+          item.product_id,
+          item.product_option_id,
+          item.product_name,
+          item.thumbnail_url,
+          item.color,
+          item.size,
+          item.unit_price,
+          item.quantity,
+          item.unit_price * item.quantity,
+        ],
+      );
+    }
+
+    await connection.execute(
+      `INSERT INTO payments (order_id, payment_id, status, amount, currency)
+       VALUES (?, ?, 'PENDING_PAYMENT', ?, 'KRW')`,
+      [orderId, paymentId, totalPrice],
+    );
+
+    await connection.commit();
+    return { status: 'SUCCESS', orderId, orderNumber, paymentId, totalPrice };
+  } catch (error) {
+    await connection.rollback();
+    throw error;
+  } finally {
+    connection.release();
+  }
+};
 
 export interface OrderListRow extends RowDataPacket {
   id: number;
   order_number: string;
-  status: 'ORDERED' | 'PREPARING' | 'SHIPPED' | 'DELIVERED' | 'CANCELED';
+  status: 'PENDING_PAYMENT' | 'ORDERED' | 'PREPARING' | 'SHIPPED' | 'DELIVERED' | 'CANCELED';
   total_price: number;
   item_count: number;
   representative_product_name: string;
@@ -15,7 +156,7 @@ export interface OrderListRow extends RowDataPacket {
 export interface OrderDetailRow extends RowDataPacket {
   id: number;
   order_number: string;
-  status: 'ORDERED' | 'PREPARING' | 'SHIPPED' | 'DELIVERED' | 'CANCELED';
+  status: 'PENDING_PAYMENT' | 'ORDERED' | 'PREPARING' | 'SHIPPED' | 'DELIVERED' | 'CANCELED';
   items_price: number;
   delivery_fee: number;
   total_price: number;
