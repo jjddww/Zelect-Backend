@@ -1,94 +1,14 @@
 [
   {
     "product_id": 1,
-    "color": "화이트",
+    "color": "아이보리",
     "size": "S",
-    "stock_quantity": 10,
-    "additional_price": 0,
-    "status": "ACTIVE"
-  },
-  {
-    "product_id": 1,
-    "color": "화이트",
-    "size": "M",
-    "stock_quantity": 6,
-    "additional_price": 0,
-    "status": "ACTIVE"
-  },
-  {
-    "product_id": 1,
-    "color": "스카이블루",
-    "size": "L",
-    "stock_quantity": 0,
-    "additional_price": 0,
-    "status": "SOLD_OUT"
-  },
-  {
-    "product_id": 2,
-    "color": "화이트",
-    "size": "M",
-    "stock_quantity": 12,
-    "additional_price": 0,
-    "status": "ACTIVE"
-  },
-  {
-    "product_id": 2,
-    "color": "블랙",
-    "size": "L",
     "stock_quantity": 8,
     "additional_price": 0,
     "status": "ACTIVE"
   },
   {
-    "product_id": 3,
-    "color": "차콜",
-    "size": "M",
-    "stock_quantity": 5,
-    "additional_price": 0,
-    "status": "ACTIVE"
-  },
-  {
-    "product_id": 3,
-    "color": "블랙",
-    "size": "L",
-    "stock_quantity": 3,
-    "additional_price": 0,
-    "status": "ACTIVE"
-  },
-  {
-    "product_id": 4,
-    "color": "베이지",
-    "size": "M",
-    "stock_quantity": 4,
-    "additional_price": 0,
-    "status": "ACTIVE"
-  },
-  {
-    "product_id": 4,
-    "color": "네이비",
-    "size": "XL",
-    "stock_quantity": 0,
-    "additional_price": 0,
-    "status": "SOLD_OUT"
-  },
-  {
-    "product_id": 5,
-    "color": "아이보리",
-    "size": "M",
-    "stock_quantity": 7,
-    "additional_price": 0,
-    "status": "ACTIVE"
-  },
-  {
-    "product_id": 5,
-    "color": "네이비",
-    "size": "L",
-    "stock_quantity": 5,
-    "additional_price": 0,
-    "status": "ACTIVE"
-  },
-  {
-    "product_id": 6,
+    "product_id": 1,
     "color": "블랙",
     "size": "M",
     "stock_quantity": 9,
@@ -96,83 +16,4355 @@
     "status": "ACTIVE"
   },
   {
-    "product_id": 6,
-    "color": "멜란지",
+    "product_id": 1,
+    "color": "스카이블루",
     "size": "L",
-    "stock_quantity": 4,
+    "stock_quantity": 10,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 2,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 2,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 2,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 15,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 3,
+    "color": "블랙",
+    "size": "230",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 3,
+    "color": "오프화이트",
+    "size": "240",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 3,
+    "color": "브라운",
+    "size": "250",
+    "stock_quantity": 20,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 4,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 4,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 4,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 5,
+    "color": "블랙",
+    "size": "S",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 5,
+    "color": "네이비",
+    "size": "M",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 5,
+    "color": "라벤더",
+    "size": "L",
+    "stock_quantity": 30,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 6,
+    "color": "화이트",
+    "size": "M",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 6,
+    "color": "차콜",
+    "size": "L",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 6,
+    "color": "네이비",
+    "size": "XL",
+    "stock_quantity": 35,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 7,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 26,
     "additional_price": 0,
     "status": "ACTIVE"
   },
   {
     "product_id": 7,
     "color": "카키",
-    "size": "M",
-    "stock_quantity": 6,
+    "size": "ONE",
+    "stock_quantity": 33,
     "additional_price": 0,
     "status": "ACTIVE"
   },
   {
     "product_id": 7,
-    "color": "블랙",
-    "size": "XL",
-    "stock_quantity": 2,
+    "color": "브라운",
+    "size": "ONE",
+    "stock_quantity": 40,
     "additional_price": 0,
     "status": "ACTIVE"
   },
   {
     "product_id": 8,
-    "color": "인디고",
+    "color": "블랙",
+    "size": "260",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 8,
+    "color": "화이트",
+    "size": "270",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 8,
+    "color": "그레이",
+    "size": "280",
+    "stock_quantity": 9,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 9,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 9,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 9,
+    "color": "네이비",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 10,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 10,
+    "color": "그레이",
+    "size": "L",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 10,
+    "color": "블루",
+    "size": "XL",
+    "stock_quantity": 19,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 11,
+    "color": "기본",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 12,
+    "color": "코랄",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 12,
+    "color": "로즈",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 12,
+    "color": "누드",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 13,
+    "color": "기본",
+    "size": "100ml",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 14,
+    "color": "시트러스",
+    "size": "50ml",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 14,
+    "color": "플로럴",
+    "size": "300ml",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 14,
+    "color": "우디",
+    "size": "50ml",
+    "stock_quantity": 39,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 15,
+    "color": "시트러스",
+    "size": "30ml",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 15,
+    "color": "플로럴",
+    "size": "50ml",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 15,
+    "color": "우디",
+    "size": "30ml",
+    "stock_quantity": 8,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 16,
+    "color": "화이트",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 16,
+    "color": "핑크",
+    "size": "ONE",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 16,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 17,
+    "color": "크림",
+    "size": "6M",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 17,
+    "color": "베이지",
+    "size": "12M",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 17,
+    "color": "민트",
+    "size": "18M",
+    "stock_quantity": 0,
+    "additional_price": 5000,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 18,
+    "color": "아이보리",
+    "size": "110",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 18,
+    "color": "블루",
+    "size": "120",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 18,
+    "color": "옐로우",
+    "size": "130",
+    "stock_quantity": 23,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 19,
+    "color": "화이트",
+    "size": "170",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 19,
+    "color": "핑크",
+    "size": "180",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 19,
+    "color": "블루",
+    "size": "190",
+    "stock_quantity": 28,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 20,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 20,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 20,
+    "color": "라벤더",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 21,
+    "color": "멀티",
+    "size": "ONE",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 22,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 22,
+    "color": "그레이",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 22,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 7,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 23,
+    "color": "아이보리",
+    "size": "S",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 23,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 23,
+    "color": "스카이블루",
+    "size": "L",
+    "stock_quantity": 12,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 24,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 24,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 24,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 25,
+    "color": "블랙",
+    "size": "230",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 25,
+    "color": "오프화이트",
+    "size": "240",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 25,
+    "color": "브라운",
+    "size": "250",
+    "stock_quantity": 22,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 26,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 26,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 26,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 27,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 27,
+    "color": "블랙",
+    "size": "S",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 27,
+    "color": "네이비",
     "size": "M",
     "stock_quantity": 5,
     "additional_price": 0,
     "status": "ACTIVE"
   },
   {
-    "product_id": 8,
-    "color": "인디고",
+    "product_id": 27,
+    "color": "라벤더",
+    "size": "L",
+    "stock_quantity": 32,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 28,
+    "color": "화이트",
+    "size": "M",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 28,
+    "color": "차콜",
+    "size": "L",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 28,
+    "color": "네이비",
+    "size": "XL",
+    "stock_quantity": 37,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 29,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 29,
+    "color": "카키",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 29,
+    "color": "브라운",
+    "size": "ONE",
+    "stock_quantity": 6,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 30,
+    "color": "블랙",
+    "size": "260",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 30,
+    "color": "화이트",
+    "size": "270",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 30,
+    "color": "그레이",
+    "size": "280",
+    "stock_quantity": 11,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 31,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 31,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 31,
+    "color": "네이비",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 32,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 32,
+    "color": "그레이",
     "size": "L",
     "stock_quantity": 0,
     "additional_price": 0,
     "status": "SOLD_OUT"
   },
   {
-    "product_id": 9,
-    "color": "차콜",
+    "product_id": 32,
+    "color": "블루",
+    "size": "XL",
+    "stock_quantity": 21,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 33,
+    "color": "기본",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 34,
+    "color": "코랄",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 34,
+    "color": "로즈",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 34,
+    "color": "누드",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 35,
+    "color": "기본",
+    "size": "100ml",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 36,
+    "color": "시트러스",
+    "size": "50ml",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 36,
+    "color": "플로럴",
+    "size": "300ml",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 36,
+    "color": "우디",
+    "size": "50ml",
+    "stock_quantity": 5,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 37,
+    "color": "시트러스",
+    "size": "30ml",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 37,
+    "color": "플로럴",
+    "size": "50ml",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 37,
+    "color": "우디",
+    "size": "30ml",
+    "stock_quantity": 10,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 38,
+    "color": "화이트",
+    "size": "ONE",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 38,
+    "color": "핑크",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 38,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 15,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 39,
+    "color": "크림",
+    "size": "6M",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 39,
+    "color": "베이지",
+    "size": "12M",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 39,
+    "color": "민트",
+    "size": "18M",
+    "stock_quantity": 20,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 40,
+    "color": "아이보리",
+    "size": "110",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 40,
+    "color": "블루",
+    "size": "120",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 40,
+    "color": "옐로우",
+    "size": "130",
+    "stock_quantity": 25,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 41,
+    "color": "화이트",
+    "size": "170",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 41,
+    "color": "핑크",
+    "size": "180",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 41,
+    "color": "블루",
+    "size": "190",
+    "stock_quantity": 30,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 42,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 42,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 42,
+    "color": "라벤더",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 43,
+    "color": "멀티",
+    "size": "ONE",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 44,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 44,
+    "color": "그레이",
+    "size": "ONE",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 44,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 45,
+    "color": "아이보리",
+    "size": "S",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 45,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 45,
+    "color": "스카이블루",
+    "size": "L",
+    "stock_quantity": 14,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 46,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 46,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 46,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 19,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 47,
+    "color": "블랙",
+    "size": "230",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 47,
+    "color": "오프화이트",
+    "size": "240",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 47,
+    "color": "브라운",
+    "size": "250",
+    "stock_quantity": 24,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 48,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 48,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 48,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 49,
+    "color": "블랙",
+    "size": "S",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 49,
+    "color": "네이비",
+    "size": "M",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 49,
+    "color": "라벤더",
+    "size": "L",
+    "stock_quantity": 34,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 50,
+    "color": "화이트",
     "size": "M",
     "stock_quantity": 11,
     "additional_price": 0,
     "status": "ACTIVE"
   },
   {
-    "product_id": 9,
-    "color": "올리브",
+    "product_id": 50,
+    "color": "차콜",
     "size": "L",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 50,
+    "color": "네이비",
+    "size": "XL",
+    "stock_quantity": 39,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 51,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 51,
+    "color": "카키",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 51,
+    "color": "브라운",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 52,
+    "color": "블랙",
+    "size": "260",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 52,
+    "color": "화이트",
+    "size": "270",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 52,
+    "color": "그레이",
+    "size": "280",
+    "stock_quantity": 13,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 53,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "HIDDEN"
+  },
+  {
+    "product_id": 53,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "HIDDEN"
+  },
+  {
+    "product_id": 53,
+    "color": "네이비",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "HIDDEN"
+  },
+  {
+    "product_id": 54,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 54,
+    "color": "그레이",
+    "size": "L",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 54,
+    "color": "블루",
+    "size": "XL",
+    "stock_quantity": 23,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 55,
+    "color": "기본",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 56,
+    "color": "코랄",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 56,
+    "color": "로즈",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 56,
+    "color": "누드",
+    "size": "ONE",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 57,
+    "color": "기본",
+    "size": "100ml",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 58,
+    "color": "시트러스",
+    "size": "50ml",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 58,
+    "color": "플로럴",
+    "size": "300ml",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 58,
+    "color": "우디",
+    "size": "50ml",
+    "stock_quantity": 7,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 59,
+    "color": "시트러스",
+    "size": "30ml",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 59,
+    "color": "플로럴",
+    "size": "50ml",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 59,
+    "color": "우디",
+    "size": "30ml",
+    "stock_quantity": 12,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 60,
+    "color": "화이트",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 60,
+    "color": "핑크",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 60,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 61,
+    "color": "크림",
+    "size": "6M",
     "stock_quantity": 8,
     "additional_price": 0,
     "status": "ACTIVE"
   },
   {
-    "product_id": 10,
+    "product_id": 61,
+    "color": "베이지",
+    "size": "12M",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 61,
+    "color": "민트",
+    "size": "18M",
+    "stock_quantity": 22,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 62,
+    "color": "아이보리",
+    "size": "110",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 62,
+    "color": "블루",
+    "size": "120",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 62,
+    "color": "옐로우",
+    "size": "130",
+    "stock_quantity": 27,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 63,
+    "color": "화이트",
+    "size": "170",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 63,
+    "color": "핑크",
+    "size": "180",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 63,
+    "color": "블루",
+    "size": "190",
+    "stock_quantity": 32,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 64,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 64,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 64,
+    "color": "라벤더",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 65,
+    "color": "멀티",
+    "size": "ONE",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 66,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 66,
+    "color": "그레이",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 66,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 67,
+    "color": "아이보리",
+    "size": "S",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 67,
     "color": "블랙",
-    "size": "FREE",
+    "size": "M",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 67,
+    "color": "스카이블루",
+    "size": "L",
+    "stock_quantity": 16,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 68,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 68,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 68,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 69,
+    "color": "블랙",
+    "size": "230",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 69,
+    "color": "오프화이트",
+    "size": "240",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 69,
+    "color": "브라운",
+    "size": "250",
+    "stock_quantity": 26,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 70,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 70,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 70,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 31,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 71,
+    "color": "블랙",
+    "size": "S",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 71,
+    "color": "네이비",
+    "size": "M",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 71,
+    "color": "라벤더",
+    "size": "L",
+    "stock_quantity": 36,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 72,
+    "color": "화이트",
+    "size": "M",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 72,
+    "color": "차콜",
+    "size": "L",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 72,
+    "color": "네이비",
+    "size": "XL",
+    "stock_quantity": 5,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 73,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 73,
+    "color": "카키",
+    "size": "ONE",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 73,
+    "color": "브라운",
+    "size": "ONE",
+    "stock_quantity": 10,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 74,
+    "color": "블랙",
+    "size": "260",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 74,
+    "color": "화이트",
+    "size": "270",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 74,
+    "color": "그레이",
+    "size": "280",
+    "stock_quantity": 15,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 75,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 75,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 75,
+    "color": "네이비",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 76,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 76,
+    "color": "그레이",
+    "size": "L",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 76,
+    "color": "블루",
+    "size": "XL",
+    "stock_quantity": 25,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 77,
+    "color": "기본",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 78,
+    "color": "코랄",
+    "size": "ONE",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 78,
+    "color": "로즈",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 78,
+    "color": "누드",
+    "size": "ONE",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 79,
+    "color": "기본",
+    "size": "100ml",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 80,
+    "color": "시트러스",
+    "size": "50ml",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 80,
+    "color": "플로럴",
+    "size": "300ml",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 80,
+    "color": "우디",
+    "size": "50ml",
+    "stock_quantity": 9,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 81,
+    "color": "시트러스",
+    "size": "30ml",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 81,
+    "color": "플로럴",
+    "size": "50ml",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 81,
+    "color": "우디",
+    "size": "30ml",
+    "stock_quantity": 14,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 82,
+    "color": "화이트",
+    "size": "ONE",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 82,
+    "color": "핑크",
+    "size": "ONE",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 82,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 19,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 83,
+    "color": "크림",
+    "size": "6M",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 83,
+    "color": "베이지",
+    "size": "12M",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 83,
+    "color": "민트",
+    "size": "18M",
+    "stock_quantity": 24,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 84,
+    "color": "아이보리",
+    "size": "110",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 84,
+    "color": "블루",
+    "size": "120",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 84,
+    "color": "옐로우",
+    "size": "130",
+    "stock_quantity": 29,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 85,
+    "color": "화이트",
+    "size": "170",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 85,
+    "color": "핑크",
+    "size": "180",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 85,
+    "color": "블루",
+    "size": "190",
+    "stock_quantity": 0,
+    "additional_price": 5000,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 86,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 86,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 86,
+    "color": "라벤더",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 87,
+    "color": "멀티",
+    "size": "ONE",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 88,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 88,
+    "color": "그레이",
+    "size": "ONE",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 88,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 89,
+    "color": "아이보리",
+    "size": "S",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 89,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 89,
+    "color": "스카이블루",
+    "size": "L",
+    "stock_quantity": 18,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 90,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 90,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 90,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 91,
+    "color": "블랙",
+    "size": "230",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 91,
+    "color": "오프화이트",
+    "size": "240",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 91,
+    "color": "브라운",
+    "size": "250",
+    "stock_quantity": 28,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 92,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 92,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 92,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 93,
+    "color": "블랙",
+    "size": "S",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 93,
+    "color": "네이비",
+    "size": "M",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 93,
+    "color": "라벤더",
+    "size": "L",
+    "stock_quantity": 38,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 94,
+    "color": "화이트",
+    "size": "M",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 94,
+    "color": "차콜",
+    "size": "L",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 94,
+    "color": "네이비",
+    "size": "XL",
+    "stock_quantity": 7,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 95,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 95,
+    "color": "카키",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 95,
+    "color": "브라운",
+    "size": "ONE",
+    "stock_quantity": 12,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 96,
+    "color": "블랙",
+    "size": "260",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 96,
+    "color": "화이트",
+    "size": "270",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 96,
+    "color": "그레이",
+    "size": "280",
+    "stock_quantity": 17,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 97,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 97,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 97,
+    "color": "네이비",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 98,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 98,
+    "color": "그레이",
+    "size": "L",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 98,
+    "color": "블루",
+    "size": "XL",
+    "stock_quantity": 27,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 99,
+    "color": "기본",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 100,
+    "color": "코랄",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 100,
+    "color": "로즈",
+    "size": "ONE",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 100,
+    "color": "누드",
+    "size": "ONE",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 101,
+    "color": "기본",
+    "size": "100ml",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 102,
+    "color": "시트러스",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 102,
+    "color": "플로럴",
+    "size": "300ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 102,
+    "color": "우디",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 5000,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 103,
+    "color": "시트러스",
+    "size": "30ml",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 103,
+    "color": "플로럴",
+    "size": "50ml",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 103,
+    "color": "우디",
+    "size": "30ml",
+    "stock_quantity": 16,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 104,
+    "color": "화이트",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 104,
+    "color": "핑크",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 104,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 105,
+    "color": "크림",
+    "size": "6M",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 105,
+    "color": "베이지",
+    "size": "12M",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 105,
+    "color": "민트",
+    "size": "18M",
+    "stock_quantity": 26,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 106,
+    "color": "아이보리",
+    "size": "110",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "HIDDEN"
+  },
+  {
+    "product_id": 106,
+    "color": "블루",
+    "size": "120",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "HIDDEN"
+  },
+  {
+    "product_id": 106,
+    "color": "옐로우",
+    "size": "130",
+    "stock_quantity": 0,
+    "additional_price": 5000,
+    "status": "HIDDEN"
+  },
+  {
+    "product_id": 107,
+    "color": "화이트",
+    "size": "170",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 107,
+    "color": "핑크",
+    "size": "180",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 107,
+    "color": "블루",
+    "size": "190",
+    "stock_quantity": 36,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 108,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 108,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 108,
+    "color": "라벤더",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 109,
+    "color": "멀티",
+    "size": "ONE",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 110,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 110,
+    "color": "그레이",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 110,
+    "color": "민트",
+    "size": "ONE",
     "stock_quantity": 15,
     "additional_price": 0,
     "status": "ACTIVE"
   },
   {
-    "product_id": 10,
+    "product_id": 111,
+    "color": "아이보리",
+    "size": "S",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 111,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 111,
+    "color": "스카이블루",
+    "size": "L",
+    "stock_quantity": 20,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 112,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 112,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 112,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 113,
+    "color": "블랙",
+    "size": "230",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 113,
+    "color": "오프화이트",
+    "size": "240",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 113,
+    "color": "브라운",
+    "size": "250",
+    "stock_quantity": 30,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 114,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 114,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 114,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 115,
+    "color": "블랙",
+    "size": "S",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 115,
     "color": "네이비",
-    "size": "FREE",
+    "size": "M",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 115,
+    "color": "라벤더",
+    "size": "L",
+    "stock_quantity": 40,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 116,
+    "color": "화이트",
+    "size": "M",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 116,
+    "color": "차콜",
+    "size": "L",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 116,
+    "color": "네이비",
+    "size": "XL",
+    "stock_quantity": 9,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 117,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 117,
+    "color": "카키",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 117,
+    "color": "브라운",
+    "size": "ONE",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 118,
+    "color": "블랙",
+    "size": "260",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 118,
+    "color": "화이트",
+    "size": "270",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 118,
+    "color": "그레이",
+    "size": "280",
+    "stock_quantity": 19,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 119,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 119,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 119,
+    "color": "네이비",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 120,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 120,
+    "color": "그레이",
+    "size": "L",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 120,
+    "color": "블루",
+    "size": "XL",
+    "stock_quantity": 29,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 121,
+    "color": "기본",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 122,
+    "color": "코랄",
+    "size": "ONE",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 122,
+    "color": "로즈",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 122,
+    "color": "누드",
+    "size": "ONE",
+    "stock_quantity": 39,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 123,
+    "color": "기본",
+    "size": "100ml",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 124,
+    "color": "시트러스",
+    "size": "50ml",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 124,
+    "color": "플로럴",
+    "size": "300ml",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 124,
+    "color": "우디",
+    "size": "50ml",
+    "stock_quantity": 13,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 125,
+    "color": "시트러스",
+    "size": "30ml",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 125,
+    "color": "플로럴",
+    "size": "50ml",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 125,
+    "color": "우디",
+    "size": "30ml",
+    "stock_quantity": 18,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 126,
+    "color": "화이트",
+    "size": "ONE",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 126,
+    "color": "핑크",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 126,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 127,
+    "color": "크림",
+    "size": "6M",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 127,
+    "color": "베이지",
+    "size": "12M",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 127,
+    "color": "민트",
+    "size": "18M",
+    "stock_quantity": 28,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 128,
+    "color": "아이보리",
+    "size": "110",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 128,
+    "color": "블루",
+    "size": "120",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 128,
+    "color": "옐로우",
+    "size": "130",
+    "stock_quantity": 33,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 129,
+    "color": "화이트",
+    "size": "170",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 129,
+    "color": "핑크",
+    "size": "180",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 129,
+    "color": "블루",
+    "size": "190",
+    "stock_quantity": 38,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 130,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 130,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 130,
+    "color": "라벤더",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 131,
+    "color": "멀티",
+    "size": "ONE",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 132,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 132,
+    "color": "그레이",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 132,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 133,
+    "color": "아이보리",
+    "size": "S",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 133,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 133,
+    "color": "스카이블루",
+    "size": "L",
+    "stock_quantity": 22,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 134,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 134,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 134,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 27,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 135,
+    "color": "블랙",
+    "size": "230",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 135,
+    "color": "오프화이트",
+    "size": "240",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 135,
+    "color": "브라운",
+    "size": "250",
+    "stock_quantity": 32,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 136,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 136,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 136,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 137,
+    "color": "블랙",
+    "size": "S",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 137,
+    "color": "네이비",
+    "size": "M",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 137,
+    "color": "라벤더",
+    "size": "L",
+    "stock_quantity": 6,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 138,
+    "color": "화이트",
+    "size": "M",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 138,
+    "color": "차콜",
+    "size": "L",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 138,
+    "color": "네이비",
+    "size": "XL",
+    "stock_quantity": 11,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 139,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 139,
+    "color": "카키",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 139,
+    "color": "브라운",
+    "size": "ONE",
+    "stock_quantity": 16,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 140,
+    "color": "블랙",
+    "size": "260",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 140,
+    "color": "화이트",
+    "size": "270",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 140,
+    "color": "그레이",
+    "size": "280",
+    "stock_quantity": 21,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 141,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 141,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 141,
+    "color": "네이비",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 142,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 142,
+    "color": "그레이",
+    "size": "L",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 142,
+    "color": "블루",
+    "size": "XL",
+    "stock_quantity": 31,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 143,
+    "color": "기본",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 144,
+    "color": "코랄",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 144,
+    "color": "로즈",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 144,
+    "color": "누드",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 145,
+    "color": "기본",
+    "size": "100ml",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 146,
+    "color": "시트러스",
+    "size": "50ml",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 146,
+    "color": "플로럴",
+    "size": "300ml",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 146,
+    "color": "우디",
+    "size": "50ml",
+    "stock_quantity": 15,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 147,
+    "color": "시트러스",
+    "size": "30ml",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 147,
+    "color": "플로럴",
+    "size": "50ml",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 147,
+    "color": "우디",
+    "size": "30ml",
+    "stock_quantity": 20,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 148,
+    "color": "화이트",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 148,
+    "color": "핑크",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 148,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 149,
+    "color": "크림",
+    "size": "6M",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 149,
+    "color": "베이지",
+    "size": "12M",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 149,
+    "color": "민트",
+    "size": "18M",
+    "stock_quantity": 30,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 150,
+    "color": "아이보리",
+    "size": "110",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 150,
+    "color": "블루",
+    "size": "120",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 150,
+    "color": "옐로우",
+    "size": "130",
+    "stock_quantity": 35,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 151,
+    "color": "화이트",
+    "size": "170",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 151,
+    "color": "핑크",
+    "size": "180",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 151,
+    "color": "블루",
+    "size": "190",
+    "stock_quantity": 40,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 152,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 152,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 152,
+    "color": "라벤더",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 153,
+    "color": "멀티",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 154,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 154,
+    "color": "그레이",
+    "size": "ONE",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 154,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 19,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 155,
+    "color": "아이보리",
+    "size": "S",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 155,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 155,
+    "color": "스카이블루",
+    "size": "L",
+    "stock_quantity": 24,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 156,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 156,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 156,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 157,
+    "color": "블랙",
+    "size": "230",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 157,
+    "color": "오프화이트",
+    "size": "240",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 157,
+    "color": "브라운",
+    "size": "250",
+    "stock_quantity": 34,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 158,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 158,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 158,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 39,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 159,
+    "color": "블랙",
+    "size": "S",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "HIDDEN"
+  },
+  {
+    "product_id": 159,
+    "color": "네이비",
+    "size": "M",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "HIDDEN"
+  },
+  {
+    "product_id": 159,
+    "color": "라벤더",
+    "size": "L",
+    "stock_quantity": 0,
+    "additional_price": 5000,
+    "status": "HIDDEN"
+  },
+  {
+    "product_id": 160,
+    "color": "화이트",
+    "size": "M",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 160,
+    "color": "차콜",
+    "size": "L",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 160,
+    "color": "네이비",
+    "size": "XL",
+    "stock_quantity": 13,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 161,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 161,
+    "color": "카키",
+    "size": "ONE",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 161,
+    "color": "브라운",
+    "size": "ONE",
+    "stock_quantity": 18,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 162,
+    "color": "블랙",
+    "size": "260",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 162,
+    "color": "화이트",
+    "size": "270",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 162,
+    "color": "그레이",
+    "size": "280",
+    "stock_quantity": 23,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 163,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 163,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 163,
+    "color": "네이비",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 164,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 164,
+    "color": "그레이",
+    "size": "L",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 164,
+    "color": "블루",
+    "size": "XL",
+    "stock_quantity": 33,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 165,
+    "color": "기본",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 166,
+    "color": "코랄",
+    "size": "ONE",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 166,
+    "color": "로즈",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 166,
+    "color": "누드",
+    "size": "ONE",
     "stock_quantity": 7,
     "additional_price": 0,
     "status": "ACTIVE"
   },
   {
-    "product_id": 10,
-    "color": "베이지",
-    "size": "FREE",
+    "product_id": 167,
+    "color": "기본",
+    "size": "100ml",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 168,
+    "color": "시트러스",
+    "size": "50ml",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 168,
+    "color": "플로럴",
+    "size": "300ml",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 168,
+    "color": "우디",
+    "size": "50ml",
+    "stock_quantity": 17,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 169,
+    "color": "시트러스",
+    "size": "30ml",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 169,
+    "color": "플로럴",
+    "size": "50ml",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 169,
+    "color": "우디",
+    "size": "30ml",
+    "stock_quantity": 22,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 170,
+    "color": "화이트",
+    "size": "ONE",
     "stock_quantity": 0,
     "additional_price": 0,
     "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 170,
+    "color": "핑크",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 170,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 171,
+    "color": "크림",
+    "size": "6M",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 171,
+    "color": "베이지",
+    "size": "12M",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 171,
+    "color": "민트",
+    "size": "18M",
+    "stock_quantity": 32,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 172,
+    "color": "아이보리",
+    "size": "110",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 172,
+    "color": "블루",
+    "size": "120",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 172,
+    "color": "옐로우",
+    "size": "130",
+    "stock_quantity": 37,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 173,
+    "color": "화이트",
+    "size": "170",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 173,
+    "color": "핑크",
+    "size": "180",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 173,
+    "color": "블루",
+    "size": "190",
+    "stock_quantity": 6,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 174,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 174,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 174,
+    "color": "라벤더",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 175,
+    "color": "멀티",
+    "size": "ONE",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 176,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 176,
+    "color": "그레이",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 176,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 177,
+    "color": "아이보리",
+    "size": "S",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 177,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 177,
+    "color": "스카이블루",
+    "size": "L",
+    "stock_quantity": 26,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 178,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 178,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 178,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 31,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 179,
+    "color": "블랙",
+    "size": "230",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 179,
+    "color": "오프화이트",
+    "size": "240",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 179,
+    "color": "브라운",
+    "size": "250",
+    "stock_quantity": 36,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 180,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 180,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 180,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 181,
+    "color": "블랙",
+    "size": "S",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 181,
+    "color": "네이비",
+    "size": "M",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 181,
+    "color": "라벤더",
+    "size": "L",
+    "stock_quantity": 10,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 182,
+    "color": "화이트",
+    "size": "M",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 182,
+    "color": "차콜",
+    "size": "L",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 182,
+    "color": "네이비",
+    "size": "XL",
+    "stock_quantity": 15,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 183,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 183,
+    "color": "카키",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 183,
+    "color": "브라운",
+    "size": "ONE",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 184,
+    "color": "블랙",
+    "size": "260",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 184,
+    "color": "화이트",
+    "size": "270",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 184,
+    "color": "그레이",
+    "size": "280",
+    "stock_quantity": 25,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 185,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 185,
+    "color": "실버",
+    "size": "ONE",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 185,
+    "color": "네이비",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 186,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 186,
+    "color": "그레이",
+    "size": "L",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 186,
+    "color": "블루",
+    "size": "XL",
+    "stock_quantity": 35,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 187,
+    "color": "기본",
+    "size": "50ml",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 188,
+    "color": "코랄",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 188,
+    "color": "로즈",
+    "size": "ONE",
+    "stock_quantity": 37,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 188,
+    "color": "누드",
+    "size": "ONE",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 189,
+    "color": "기본",
+    "size": "100ml",
+    "stock_quantity": 32,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 190,
+    "color": "시트러스",
+    "size": "50ml",
+    "stock_quantity": 35,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 190,
+    "color": "플로럴",
+    "size": "300ml",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 190,
+    "color": "우디",
+    "size": "50ml",
+    "stock_quantity": 19,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 191,
+    "color": "시트러스",
+    "size": "30ml",
+    "stock_quantity": 38,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 191,
+    "color": "플로럴",
+    "size": "50ml",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 191,
+    "color": "우디",
+    "size": "30ml",
+    "stock_quantity": 24,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 192,
+    "color": "화이트",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 192,
+    "color": "핑크",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 192,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 193,
+    "color": "크림",
+    "size": "6M",
+    "stock_quantity": 8,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 193,
+    "color": "베이지",
+    "size": "12M",
+    "stock_quantity": 21,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 193,
+    "color": "민트",
+    "size": "18M",
+    "stock_quantity": 34,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 194,
+    "color": "아이보리",
+    "size": "110",
+    "stock_quantity": 11,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 194,
+    "color": "블루",
+    "size": "120",
+    "stock_quantity": 25,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 194,
+    "color": "옐로우",
+    "size": "130",
+    "stock_quantity": 39,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 195,
+    "color": "화이트",
+    "size": "170",
+    "stock_quantity": 14,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 195,
+    "color": "핑크",
+    "size": "180",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 195,
+    "color": "블루",
+    "size": "190",
+    "stock_quantity": 8,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 196,
+    "color": "베이지",
+    "size": "ONE",
+    "stock_quantity": 17,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 196,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 196,
+    "color": "라벤더",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 197,
+    "color": "멀티",
+    "size": "ONE",
+    "stock_quantity": 20,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 198,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 0,
+    "additional_price": 0,
+    "status": "SOLD_OUT"
+  },
+  {
+    "product_id": 198,
+    "color": "그레이",
+    "size": "ONE",
+    "stock_quantity": 5,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 198,
+    "color": "민트",
+    "size": "ONE",
+    "stock_quantity": 23,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 199,
+    "color": "아이보리",
+    "size": "S",
+    "stock_quantity": 26,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 199,
+    "color": "블랙",
+    "size": "M",
+    "stock_quantity": 9,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 199,
+    "color": "스카이블루",
+    "size": "L",
+    "stock_quantity": 28,
+    "additional_price": 5000,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 200,
+    "color": "블랙",
+    "size": "ONE",
+    "stock_quantity": 29,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 200,
+    "color": "탄",
+    "size": "ONE",
+    "stock_quantity": 13,
+    "additional_price": 0,
+    "status": "ACTIVE"
+  },
+  {
+    "product_id": 200,
+    "color": "크림",
+    "size": "ONE",
+    "stock_quantity": 33,
+    "additional_price": 0,
+    "status": "ACTIVE"
   }
 ]

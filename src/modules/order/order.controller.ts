@@ -1,6 +1,62 @@
 import { Request, Response, NextFunction } from 'express';
 import * as orderService from './order.service';
 
+const isNonEmptyString = (value: unknown, maxLength: number): value is string =>
+  typeof value === 'string' && value.trim().length > 0 && value.length <= maxLength;
+
+export const createOrder = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const userId = req.user?.id;
+    if (!userId) {
+      return res.status(401).json({ success: false, message: '회원 정보가 없습니다.' });
+    }
+
+    const {
+      cartItemIds,
+      recipientName,
+      recipientPhone,
+      zipCode,
+      address,
+      addressDetail,
+      deliveryRequest,
+    } = req.body;
+
+    if (
+      !Array.isArray(cartItemIds) ||
+      cartItemIds.length === 0 ||
+      cartItemIds.length > 100 ||
+      !cartItemIds.every((id) => Number.isInteger(id) && id > 0)
+    ) {
+      return res.status(400).json({ success: false, message: '유효한 cartItemIds가 필요합니다.' });
+    }
+    if (
+      !isNonEmptyString(recipientName, 50) ||
+      !isNonEmptyString(recipientPhone, 20) ||
+      !isNonEmptyString(zipCode, 10) ||
+      !isNonEmptyString(address, 500) ||
+      (addressDetail != null &&
+        (typeof addressDetail !== 'string' || addressDetail.length > 255)) ||
+      (deliveryRequest != null &&
+        (typeof deliveryRequest !== 'string' || deliveryRequest.length > 255))
+    ) {
+      return res.status(400).json({ success: false, message: '배송지 정보를 확인해 주세요.' });
+    }
+
+    const result = await orderService.createOrder(userId, {
+      cartItemIds,
+      recipientName,
+      recipientPhone,
+      zipCode,
+      address,
+      addressDetail: addressDetail ?? null,
+      deliveryRequest: deliveryRequest ?? null,
+    });
+    return res.status(201).json({ success: true, data: result });
+  } catch (error) {
+    next(error);
+  }
+};
+
 //내 주문내역 조회
 export const getMyOrders = async (req: Request, res: Response, next: NextFunction) => {
   try {

@@ -12,11 +12,14 @@
   },
   "scripts": {
     "db:seed": "tsx src/database/seed.ts",
+    "db:seed:products": "tsx src/database/seed-products.ts",
+    "db:generate:products": "tsx src/database/generate-product-seed.ts",
     "dev": "tsx watch src/server.ts",
     "format": "prettier --write ."
   },
   "dependencies": {
     "@apidevtools/swagger-parser": "^12.1.0",
+    "@portone/server-sdk": "^0.19.0",
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.4.2",
     "express": "^4.22.2",

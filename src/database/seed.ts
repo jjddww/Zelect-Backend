@@ -293,7 +293,6 @@ async function run() {
     await connection.query('ALTER TABLE products AUTO_INCREMENT = 1');
     await connection.query('ALTER TABLE brands AUTO_INCREMENT = 1');
     await connection.query('ALTER TABLE categories AUTO_INCREMENT = 1');
-    // await connection.query("ALTER TABLE exhibition AUTO_INCREMENT = 1");
 
     await connection.query('SET FOREIGN_KEY_CHECKS = 1');
 
